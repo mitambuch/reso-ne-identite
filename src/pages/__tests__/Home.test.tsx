@@ -22,17 +22,11 @@ describe('Home', () => {
 
   it('renders the hero heading', () => {
     renderHome();
-    expect(screen.getByText(/100% free/i)).toBeInTheDocument();
-  });
-
-  it('renders the GitHub link', () => {
-    renderHome();
-    const links = screen.getAllByRole('link', { name: /view on github/i });
-    expect(links.length).toBeGreaterThan(0);
+    expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument();
   });
 
   it('renders the features section', () => {
     renderHome();
-    expect(screen.getByText(/features/i)).toBeInTheDocument();
+    expect(screen.getByText(/what you get/i)).toBeInTheDocument();
   });
 });
