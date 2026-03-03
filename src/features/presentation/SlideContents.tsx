@@ -127,23 +127,23 @@ export const SlideApproche = () => (
 const PRINCIPES = [
   {
     keyword: 'Clarté',
-    suffix: 'avant esthétique',
-    text: 'Le logo doit être lisible à 2 cm sur une carte de visite comme à 2 mètres sur une façade. Pas de détails fins, pas d\u2019effets qui ne survivent pas au changement d\u2019échelle.',
+    suffix: '> Esthétique',
+    text: 'Un patient de 65 ans doit comprendre ce qu\u2019il a devant lui en 3 secondes. Le logo doit être lisible à 2 cm sur une carte de visite comme à 2 mètres sur une façade. Pas de détails fins, pas d\u2019effets qui ne survivent pas au changement d\u2019échelle.',
   },
   {
     keyword: 'Déclinabilité',
-    suffix: 'avant originalité',
-    text: 'Un logo génial qui ne fonctionne qu\u2019en grand format ou en couleur est un mauvais logo. Chaque proposition est testée en monochrome, en petit, en négatif, et dans le système de déclinaison.',
+    suffix: '> Originalité',
+    text: 'Un logo génial qui ne fonctionne qu\u2019en grand format ou en couleur est un mauvais logo. Chaque proposition est testée en monochrome, en petit, en négatif, et dans le système de déclinaison. Si ça ne marche pas sur un tampon, ça ne marche pas.',
   },
   {
     keyword: 'Cohérence',
-    suffix: 'avant coup de cœur',
-    text: 'L\u2019identité doit fonctionner comme un système, pas comme une pièce isolée. Le logo, la palette, la typo et le naming forment un tout.',
+    suffix: '> Coup de cœur',
+    text: 'Le client doit comprendre le logo, pas l\u2019aimer au premier regard. Un coup de cœur s\u2019essouffle, un système cohérent dure. Le logo, la palette, la typo et le naming forment un tout\u00a0— pas une collection de pièces isolées.',
   },
   {
     keyword: 'Longévité',
-    suffix: 'avant tendance',
-    text: 'Les tendances passent, un réseau de santé reste. Les choix graphiques doivent tenir 10 ans minimum sans paraître datés.',
+    suffix: '> Tendance',
+    text: 'Les tendances passent, un réseau de santé reste. Pas de dégradés à la mode, pas de flat design qui sera daté dans 3 ans. Les choix graphiques doivent tenir 10 ans minimum sans paraître datés.',
   },
 ] as const;
 
@@ -707,23 +707,95 @@ export const SlideDemain = () => (
   </div>
 );
 
-/* ─── 13. Contexte stratégique ──────────────────────────────── */
+/* ─── Stratégie ──────────────────────────────────────────────── */
 
-export const SlideContexte = () => (
-  <div className="flex h-full flex-col items-start justify-center p-8">
-    <H1>Contexte stratégique</H1>
-    <Divider />
-    <P>Contenu à venir.</P>
+export const SlideStrategie = () => (
+  <div className="flex h-full flex-col justify-between p-10">
+    <H1>Deux directions, un principe</H1>
+
+    {/* Middle — deux colonnes : texte courant + citation */}
+    <div className="grid grid-cols-[1fr_auto] items-end gap-20">
+      <div className="flex flex-col gap-5">
+        <p className="text-lg leading-relaxed text-(--sub)">
+          L&apos;identité de Réso.ne doit être assez proche du RHNe pour rassurer, assez différente
+          pour ne pas être confondue avec l&apos;hôpital, et assez modulaire pour grandir.
+        </p>
+
+        <p className="text-lg leading-relaxed text-(--sub)">
+          Notre conviction&nbsp;: le lien avec le RHNe est un atout, pas un handicap. Le RHNe
+          c&apos;est le plus grand employeur de santé du canton, des centaines de médecins, une
+          infrastructure que tout le monde connaît. Même si l&apos;image de l&apos;hôpital peut être
+          discutée par certains, la portée et la crédibilité du réseau hospitalier restent un levier
+          puissant pour un nouveau réseau ambulatoire. Réso.ne a tout intérêt à s&apos;appuyer
+          dessus plutôt qu&apos;à s&apos;en cacher.
+        </p>
+
+        <p className="text-lg leading-relaxed text-(--sub)">
+          On propose donc deux directions. La première, Cousinage, maintient une parenté visuelle
+          avec le RHNe. La deuxième, Émancipation, crée une identité propre. Dans les deux cas, le
+          RHNe reste un endorsement discret. Le degré de proximité visuelle change.
+        </p>
+      </div>
+
+      {/* Citation — colonne droite */}
+      <blockquote className="border-accent w-64 border-l-[3px] pl-6">
+        <span
+          className="text-fg leading-[1.3] font-medium tracking-tight"
+          style={{ fontSize: 'clamp(1.1rem, 2vw, 1.5rem)' }}
+        >
+          La question n&apos;est pas &laquo;&nbsp;est-ce qu&apos;on montre le lien&nbsp;&raquo; mais
+          &laquo;&nbsp;comment on le montre&nbsp;&raquo;.
+        </span>
+      </blockquote>
+    </div>
+
+    {/* Bottom spacer */}
+    <div />
   </div>
 );
 
 /* ─── 9. Le triple défi ────────────────────────────────────── */
 
+const DEFIS = [
+  {
+    num: 1,
+    title: 'Rassurer les convaincus',
+    text: 'Les patients qui font confiance au RHNe doivent sentir que Réso.ne est fiable et rattaché au réseau hospitalier. Pour eux, le lien avec l\u2019hôpital est un gage de qualité.',
+  },
+  {
+    num: 2,
+    title: 'Séduire les méfiants',
+    text: 'Les patients méfiants envers les hôpitaux — une réalité à La Chaux-de-Fonds comme à Neuchâtel — doivent percevoir Réso.ne comme leur centre médical de proximité, pas une annexe hospitalière.',
+  },
+  {
+    num: 3,
+    title: 'Anticiper la croissance',
+    text: 'L\u2019identité doit être extensible. Demain, un cabinet d\u2019ophtalmologie ou de dermatologie pourrait rejoindre le réseau. Le système doit absorber de nouvelles spécialités et de nouveaux lieux sans casser.',
+  },
+] as const;
+
 export const SlideDefi = () => (
-  <div className="flex h-full flex-col items-start justify-center p-8">
-    <H1>Le triple défi</H1>
-    <Divider />
-    <P>Contenu à venir.</P>
+  <div className="flex h-full flex-col justify-between p-10">
+    <H1>Trois contraintes à gérer simultanément</H1>
+
+    <div className="flex flex-col">
+      {DEFIS.map((d, i) => (
+        <div key={d.num}>
+          {i > 0 && <div className="bg-border my-6 h-px w-full" />}
+          <div className="grid grid-cols-[1fr_1.6fr] items-baseline gap-10">
+            <div className="flex items-center gap-4">
+              <span className="bg-accent flex h-10 w-10 shrink-0 items-center justify-center rounded-full font-mono text-sm font-bold text-white">
+                {d.num}
+              </span>
+              <P className="mb-0! max-w-none">{d.title}</P>
+            </div>
+            <p className="text-lg leading-relaxed text-(--sub)">{d.text}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div />
   </div>
 );
 
@@ -1044,40 +1116,261 @@ export const SlideExtensibilite = () => (
   </div>
 );
 
-/* ─── 20. Direction A — Cousinage (chapter) ────────────────── */
+/* ─── Variante 1 — Le parti pris ─────────────────────────── */
 
-export const SlideDirectionA = () => (
-  <div className="flex h-full flex-col items-center justify-center p-8 text-center">
-    <Label>Chapitre</Label>
-    <H1 className="text-accent">Direction A — Cousinage</H1>
+export const SlidePartiPrisA = () => (
+  <div className="flex h-full flex-col justify-between p-10">
+    <H1>Le parti pris</H1>
+
+    <div className="grid grid-cols-[1fr_auto] items-end gap-20">
+      <div className="flex flex-col gap-5">
+        <p className="text-lg leading-relaxed text-(--sub)">
+          Cette direction maintient un lien visuel direct avec le RHNe. Même typographie, Proxima
+          Nova. Même palette teal. Même logique de forme carrée pour le symbole. Un patient qui
+          connaît l&apos;hôpital sentira immédiatement quelque chose de familier.
+        </p>
+
+        <p className="text-lg leading-relaxed text-(--sub)">
+          Le symbole ne montre pas tout. Il suggère un fragment de réseau&nbsp;: des lignes qui se
+          croisent, des points qui se connectent. Pas besoin de tout voir pour comprendre que
+          c&apos;est un système. Deux points, deux rôles. L&apos;un est plein, le patient, présent,
+          ancré. L&apos;autre est vide, c&apos;est le point du .ne, la destination vers laquelle le
+          réseau le guide.
+        </p>
+
+        <p className="text-lg leading-relaxed text-(--sub)">
+          Les intersections entre les lignes sont les connexions entre les centres, entre les
+          médecins, entre l&apos;ambulatoire et l&apos;hôpital. Le carré cadre ce réseau comme une
+          fenêtre&nbsp;: on voit un morceau, on comprend qu&apos;il y a un ensemble derrière.
+        </p>
+      </div>
+
+      <blockquote className="border-accent w-64 border-l-[3px] pl-6">
+        <span
+          className="text-fg leading-[1.3] font-medium tracking-tight"
+          style={{ fontSize: 'clamp(1.1rem, 2vw, 1.5rem)' }}
+        >
+          On est dans la même famille, pas dans le même bâtiment.
+        </span>
+      </blockquote>
+    </div>
+
+    <div />
   </div>
 );
 
-/* ─── 13. Direction B — Émancipation ───────────────────────── */
+/* ─── Variante 1 — Le logo ───────────────────────────────── */
 
-export const SlideDirectionB = () => (
+export const SlideLogoA = () => (
+  <div className="flex h-full items-center justify-center p-10">
+    <img
+      src="/images/Variante_1.svg"
+      alt="Réso.ne — Variante Cousinage"
+      className="animate-logo-reveal max-h-[45vh] max-w-[45vw] object-contain"
+    />
+
+    <style>{`
+      @keyframes logo-reveal {
+        0%   { opacity: 0; filter: blur(12px); transform: scale(0.92); }
+        60%  { opacity: 1; filter: blur(0);    transform: scale(1.01); }
+        100% { opacity: 1; filter: blur(0);    transform: scale(1);   }
+      }
+      .animate-logo-reveal {
+        animation: logo-reveal 5s cubic-bezier(0.16, 1, 0.3, 1) both;
+      }
+    `}</style>
+  </div>
+);
+
+/* ─── Variante 1 — Déclinaisons ──────────────────────────── */
+
+export const SlideDeclinaisonsA = () => (
+  <div className="grid h-full grid-cols-2 grid-rows-2">
+    {/* Blanc */}
+    <div className="flex items-center justify-center bg-white">
+      <img
+        src="/images/Variante_1.svg"
+        alt="Logo sur fond blanc"
+        className="max-h-[60%] max-w-[60%] object-contain"
+      />
+    </div>
+
+    {/* Noir */}
+    <div className="flex items-center justify-center bg-black">
+      <img
+        src="/images/Variante_1.svg"
+        alt="Logo sur fond noir"
+        className="max-h-[60%] max-w-[60%] object-contain brightness-0 invert"
+      />
+    </div>
+
+    {/* Teal RHNe */}
+    <div className="flex items-center justify-center" style={{ backgroundColor: 'var(--teal)' }}>
+      <img
+        src="/images/Variante_1.svg"
+        alt="Logo sur fond teal"
+        className="max-h-[60%] max-w-[60%] object-contain brightness-0 invert"
+      />
+    </div>
+
+    {/* Gris clair */}
+    <div className="flex items-center justify-center bg-gray-100">
+      <img
+        src="/images/Variante_1.svg"
+        alt="Logo sur fond gris"
+        className="max-h-[60%] max-w-[60%] object-contain"
+      />
+    </div>
+  </div>
+);
+
+/* ─── Variante 1 — Cohabitation RHNe ─────────────────────── */
+
+export const SlideCohabitationA = () => (
+  <div className="flex h-full items-center justify-center gap-5 p-10">
+    <img
+      src="/images/Variante_1.svg"
+      alt="Logo Réso.ne — Cousinage"
+      className="h-28 object-contain"
+    />
+    <img src="/images/RHne.svg" alt="Logo RHNe" className="h-28 object-contain" />
+  </div>
+);
+
+/* ─── Variante 1 — La typographie ────────────────────────── */
+
+export const SlideTypoA = () => (
+  <div className="flex h-full flex-col justify-between p-10">
+    <H1>Proxima Nova</H1>
+
+    <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-1">
+        <p className="text-fg text-4xl font-light tracking-wide">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+        <p className="text-fg text-4xl font-light tracking-wide">abcdefghijklmnopqrstuvwxyz</p>
+        <p className="text-fg text-4xl font-light tracking-wide">0123456789</p>
+      </div>
+
+      <div className="flex max-w-[75%] flex-col gap-4">
+        <p className="text-lg leading-relaxed text-(--sub)">
+          C&apos;est la même typographie que le RHNe. Le cousinage commence là. Le patient qui lit
+          un document du RHNe et un document de Réso.ne ressent une continuité sans pouvoir
+          l&apos;expliquer. C&apos;est subtil, mais c&apos;est le premier lien entre les deux
+          marques.
+        </p>
+        <p className="text-lg leading-relaxed text-(--sub)">
+          Proxima Nova est une sans-serif géométrique, lisible à toutes les tailles, neutre et
+          professionnelle. Elle fonctionne aussi bien sur une façade qu&apos;en corps 9 sur un
+          formulaire médical.
+        </p>
+        <p className="text-sm text-(--muted) italic">
+          Pour les documents internes et la bureautique, Arial est utilisé comme police de
+          substitution.
+        </p>
+      </div>
+    </div>
+
+    <div />
+  </div>
+);
+
+/* ─── Variante 1 — Les couleurs ──────────────────────────── */
+
+const COULEURS_A = [
+  { name: 'Teal RHNe', hex: '#009B8D', text: 'white' as const },
+  { name: 'Teal clair', hex: '#7CC5BF', text: 'white' as const },
+  { name: 'Blanc', hex: '#FFFFFF', text: 'black' as const },
+  { name: 'Anthracite', hex: '#2D2D2D', text: 'white' as const },
+];
+
+const COULEURS_A_DESC: Record<string, string> = {
+  'Teal RHNe':
+    'Couleur principale. Le lien direct avec le RHNe. Utilisée pour le symbole et les accents.',
+  'Teal clair':
+    'Couleur secondaire. Utilisée pour le texte "réso.ne" dans le logo et les éléments d\u2019accompagnement.',
+  Blanc: 'Fond principal. Propreté, clarté, espace.',
+  Anthracite: 'Texte courant. Lisibilité maximale sans la dureté du noir pur.',
+};
+
+export const SlideCouleursA = () => (
+  <div className="flex h-full flex-col justify-between p-10">
+    <H1>Les couleurs</H1>
+
+    <div className="grid grid-cols-4 gap-4">
+      {COULEURS_A.map(c => (
+        <div key={c.name} className="flex flex-col">
+          <div
+            className="flex aspect-4/3 items-end rounded-lg border border-gray-200 p-4"
+            style={{ backgroundColor: c.hex }}
+          >
+            <span
+              className="text-sm font-medium"
+              style={{ color: c.text === 'white' ? '#fff' : '#000' }}
+            >
+              {c.hex}
+            </span>
+          </div>
+          <div className="mt-3 flex flex-col gap-1">
+            <span className="text-fg text-sm font-semibold">{c.name}</span>
+            <span className="text-sm leading-snug text-(--sub)">{COULEURS_A_DESC[c.name]}</span>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div />
+  </div>
+);
+
+/* ─── Variante 2 — Le parti pris ─────────────────────────── */
+
+export const SlidePartiPrisB = () => (
   <div className="flex h-full flex-col items-start justify-center p-8">
-    <H1>Direction B — Émancipation</H1>
+    <H1>Le parti pris</H1>
     <Divider />
-    <P>Contenu à venir.</P>
   </div>
 );
 
-/* ─── 14. Typographie & Logo (chapter) ─────────────────────── */
+/* ─── Variante 2 — Le logo ───────────────────────────────── */
 
-export const SlideTypoLogo = () => (
-  <div className="flex h-full flex-col items-center justify-center p-8 text-center">
-    <Label>Chapitre</Label>
-    <H1 className="text-accent">Typographie &amp; Logo</H1>
-  </div>
-);
-
-/* ─── 15. Prochaines étapes ────────────────────────────────── */
-
-export const SlideEtapes = () => (
+export const SlideLogoB = () => (
   <div className="flex h-full flex-col items-start justify-center p-8">
-    <H1>Prochaines étapes</H1>
+    <H1>Le logo</H1>
     <Divider />
-    <P>Contenu à venir.</P>
+  </div>
+);
+
+/* ─── Variante 2 — La typographie ────────────────────────── */
+
+export const SlideTypoB = () => (
+  <div className="flex h-full flex-col items-start justify-center p-8">
+    <H1>La typographie</H1>
+    <Divider />
+  </div>
+);
+
+/* ─── Variante 2 — Couleur alternative ───────────────────── */
+
+export const SlideCouleurAlt = () => (
+  <div className="flex h-full flex-col items-start justify-center p-8">
+    <H1>Couleur alternative</H1>
+    <Divider />
+  </div>
+);
+
+/* ─── Retours & décisions ────────────────────────────────── */
+
+export const SlideRetours = () => (
+  <div className="flex h-full flex-col items-start justify-center p-8">
+    <H1>Retours &amp; décisions</H1>
+    <Divider />
+  </div>
+);
+
+/* ─── Univers visuel ─────────────────────────────────────── */
+
+export const SlideUniversVisuel = () => (
+  <div className="flex h-full flex-col items-start justify-center p-8">
+    <H1>Univers visuel</H1>
+    <Divider />
   </div>
 );
