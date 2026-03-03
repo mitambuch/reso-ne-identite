@@ -261,8 +261,8 @@ export const SlideResoNe = () => (
     <div>
       <H1>Ce qu&apos;est Réso.ne</H1>
       <P className="mt-2 max-w-none">
-        Réso.ne est une SARL née du rachat du Groupe Santé Volta par le RHNe fin 2025. Quatre
-        centres, trois types d&apos;activités, un réseau.
+        Réso.ne est une SA née du rachat du Groupe Santé Volta par le RHNe fin 2025. Quatre centres,
+        trois types d&apos;activités, un réseau.
       </P>
     </div>
 
@@ -332,7 +332,7 @@ export const SlideMission = () => (
 const POSITIONS = [
   {
     keyword: 'Juridiquement séparé',
-    text: 'Réso.ne est une SARL indépendante, pas une entité étatique.',
+    text: 'Réso.ne est une SA indépendante, pas une entité étatique.',
   },
   {
     keyword: 'Administrativement indépendant',
@@ -1225,13 +1225,13 @@ export const SlideDeclinaisonsA = () => (
 /* ─── Variante 1 — Cohabitation RHNe ─────────────────────── */
 
 export const SlideCohabitationA = () => (
-  <div className="flex h-full flex-col items-start justify-center gap-8 p-10">
-    <img src="/images/RHne.svg" alt="Logo RHNe" className="h-28 object-contain" />
+  <div className="flex h-full items-center justify-center gap-6 p-10">
     <img
       src="/images/Variante_1.svg"
       alt="Logo Réso.ne — Cousinage"
-      className="h-28 object-contain"
+      className="h-24 object-contain"
     />
+    <img src="/images/RHne.svg" alt="Logo RHNe" className="h-24 object-contain" />
   </div>
 );
 
