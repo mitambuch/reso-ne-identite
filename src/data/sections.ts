@@ -44,22 +44,24 @@ export const SECTIONS: Section[] = [
   { title: 'Le triple défi', layout: 'default' }, // 17
   { title: 'Stratégie', layout: 'default' }, // 18
   { title: 'Principes de design', layout: 'default' }, // 19
-  { title: 'Philosophie du logo', layout: 'default' }, // 20
 
   /* ── VARIANTE 1 — Cousinage ─────────────────────────────── */
-  { title: 'Le parti pris', layout: 'default' }, // 21
-  { title: 'Le logo', layout: 'default' }, // 22
-  { title: 'La typographie', layout: 'default' }, // 23
+  { title: 'Le parti pris', layout: 'default' }, // 20
+  { title: 'Le logo', layout: 'default' }, // 21
+  { title: 'Déclinaisons', layout: 'default' }, // 22
+  { title: 'Cohabitation RHNe', layout: 'default' }, // 23
+  { title: 'La typographie', layout: 'default' }, // 24
+  { title: 'Les couleurs', layout: 'default' }, // 25
 
   /* ── VARIANTE 2 — Émancipation ──────────────────────────── */
-  { title: 'Le parti pris', layout: 'default' }, // 24
-  { title: 'Le logo', layout: 'default' }, // 25
-  { title: 'La typographie', layout: 'default' }, // 26
-  { title: 'Couleur alternative', layout: 'default' }, // 27
+  { title: 'Le parti pris', layout: 'default' }, // 26
+  { title: 'Le logo', layout: 'default' }, // 27
+  { title: 'La typographie', layout: 'default' }, // 28
+  { title: 'Couleur alternative', layout: 'default' }, // 29
 
   /* ── PROCHAINES ÉTAPES ──────────────────────────────────── */
-  { title: 'Retours & décisions', layout: 'default' }, // 28
-  { title: 'Univers visuel', layout: 'default' }, // 29
+  { title: 'Retours & décisions', layout: 'default' }, // 30
+  { title: 'Univers visuel', layout: 'default' }, // 31
 ];
 
 export const TOTAL_SLIDES = SECTIONS.length;
@@ -69,8 +71,8 @@ export const NAV_GROUPS: NavGroup[] = [
   { label: 'Contexte', items: [2, 3, 4] },
   { label: 'Analyse', items: [5, 6, 7, 8] },
   { label: 'Naming & Architecture', items: [9, 10, 11, 12, 13, 14, 15, 16] },
-  { label: 'Identité visuelle', items: [17, 18, 19, 20] },
-  { label: 'Variante 1 — Cousinage', items: [21, 22, 23] },
-  { label: 'Variante 2 — Émancipation', items: [24, 25, 26, 27] },
-  { label: 'Prochaines étapes', items: [28, 29] },
+  { label: 'Identité visuelle', items: [17, 18, 19] },
+  { label: 'Variante 1 — Cousinage', items: [20, 21, 22, 23, 24, 25] },
+  { label: 'Variante 2 — Émancipation', items: [26, 27, 28, 29] },
+  { label: 'Prochaines étapes', items: [30, 31] },
 ];
