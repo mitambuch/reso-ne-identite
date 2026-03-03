@@ -18,21 +18,27 @@ import {
   SlideAujourdhui,
   SlideBenchmark,
   SlideChiffres,
-  SlideContexte,
+  SlideCouleurAlt,
   SlideCouverture,
   SlideDefi,
   SlideDemain,
-  SlideDirectionA,
-  SlideDirectionB,
-  SlideEtapes,
   SlideExtensibilite,
+  SlideLogoA,
+  SlideLogoB,
   SlideMission,
   SlideNomenclature,
   SlideParcours,
+  SlidePartiPrisA,
+  SlidePartiPrisB,
+  SlidePhilosophieLogo,
   SlidePositionnement,
   SlidePrincipes,
   SlideResoNe,
-  SlideTypoLogo,
+  SlideRetours,
+  SlideStrategie,
+  SlideTypoA,
+  SlideTypoB,
+  SlideUniversVisuel,
   SlideVarianteA,
   SlideVarianteB,
   SlideVarianteC,
@@ -45,30 +51,44 @@ import { useCallback, useState } from 'react';
 /* ─── Slide component map (order matches SECTIONS) ──────────── */
 
 const SLIDE_COMPONENTS: FC[] = [
+  /* INTRO */
   SlideCouverture, // 0
   SlideApproche, // 1
-  SlidePrincipes, // 2
-  SlideResoNe, // 3
-  SlideMission, // 4
-  SlidePositionnement, // 5
-  SlideAnalyse, // 6
+  /* CONTEXTE */
+  SlideResoNe, // 2
+  SlideMission, // 3
+  SlidePositionnement, // 4
+  /* ANALYSE */
+  SlideAnalyse, // 5
+  SlideChiffres, // 6
   SlideBenchmark, // 7
-  SlideChiffres, // 8
-  SlideParcours, // 9
-  SlideAujourdhui, // 10
-  SlideDemain, // 11
-  SlideContexte, // 12
-  SlideDefi, // 13
-  SlideNomenclature, // 14
-  SlideVarianteA, // 15
-  SlideVarianteB, // 16
-  SlideVarianteC, // 17
-  SlideVolta, // 18
-  SlideExtensibilite, // 19
-  SlideDirectionA, // 20
-  SlideDirectionB, // 21
-  SlideTypoLogo, // 22
-  SlideEtapes, // 23
+  SlideParcours, // 8
+  /* NAMING & ARCHITECTURE */
+  SlideAujourdhui, // 9
+  SlideDemain, // 10
+  SlideNomenclature, // 11
+  SlideVarianteA, // 12
+  SlideVarianteB, // 13
+  SlideVarianteC, // 14
+  SlideVolta, // 15
+  SlideExtensibilite, // 16
+  /* IDENTITÉ VISUELLE */
+  SlideDefi, // 17
+  SlideStrategie, // 18
+  SlidePrincipes, // 19
+  SlidePhilosophieLogo, // 20
+  /* VARIANTE 1 — Cousinage */
+  SlidePartiPrisA, // 21
+  SlideLogoA, // 22
+  SlideTypoA, // 23
+  /* VARIANTE 2 — Émancipation */
+  SlidePartiPrisB, // 24
+  SlideLogoB, // 25
+  SlideTypoB, // 26
+  SlideCouleurAlt, // 27
+  /* PROCHAINES ÉTAPES */
+  SlideRetours, // 28
+  SlideUniversVisuel, // 29
 ];
 
 /* ═══════════════════════════════════════════════════════════════ */

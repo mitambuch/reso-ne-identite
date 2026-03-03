@@ -707,11 +707,11 @@ export const SlideDemain = () => (
   </div>
 );
 
-/* ─── 13. Contexte stratégique ──────────────────────────────── */
+/* ─── Stratégie ──────────────────────────────────────────────── */
 
-export const SlideContexte = () => (
+export const SlideStrategie = () => (
   <div className="flex h-full flex-col items-start justify-center p-8">
-    <H1>Contexte stratégique</H1>
+    <H1>Stratégie</H1>
     <Divider />
     <P>Contenu à venir.</P>
   </div>
@@ -1044,39 +1044,101 @@ export const SlideExtensibilite = () => (
   </div>
 );
 
-/* ─── 20. Direction A — Cousinage (chapter) ────────────────── */
+/* ─── Philosophie du logo ─────────────────────────────────── */
 
-export const SlideDirectionA = () => (
-  <div className="flex h-full flex-col items-center justify-center p-8 text-center">
-    <Label>Chapitre</Label>
-    <H1 className="text-accent">Direction A — Cousinage</H1>
-  </div>
-);
-
-/* ─── 13. Direction B — Émancipation ───────────────────────── */
-
-export const SlideDirectionB = () => (
+export const SlidePhilosophieLogo = () => (
   <div className="flex h-full flex-col items-start justify-center p-8">
-    <H1>Direction B — Émancipation</H1>
+    <H1>Philosophie du logo</H1>
     <Divider />
     <P>Contenu à venir.</P>
   </div>
 );
 
-/* ─── 14. Typographie & Logo (chapter) ─────────────────────── */
+/* ─── Variante 1 — Le parti pris ─────────────────────────── */
 
-export const SlideTypoLogo = () => (
-  <div className="flex h-full flex-col items-center justify-center p-8 text-center">
-    <Label>Chapitre</Label>
-    <H1 className="text-accent">Typographie &amp; Logo</H1>
+export const SlidePartiPrisA = () => (
+  <div className="flex h-full flex-col items-start justify-center p-8">
+    <H1>Le parti pris</H1>
+    <Divider />
+    <P>Contenu à venir.</P>
   </div>
 );
 
-/* ─── 15. Prochaines étapes ────────────────────────────────── */
+/* ─── Variante 1 — Le logo ───────────────────────────────── */
 
-export const SlideEtapes = () => (
+export const SlideLogoA = () => (
   <div className="flex h-full flex-col items-start justify-center p-8">
-    <H1>Prochaines étapes</H1>
+    <H1>Le logo</H1>
+    <Divider />
+    <P>Contenu à venir.</P>
+  </div>
+);
+
+/* ─── Variante 1 — La typographie ────────────────────────── */
+
+export const SlideTypoA = () => (
+  <div className="flex h-full flex-col items-start justify-center p-8">
+    <H1>La typographie</H1>
+    <Divider />
+    <P>Contenu à venir.</P>
+  </div>
+);
+
+/* ─── Variante 2 — Le parti pris ─────────────────────────── */
+
+export const SlidePartiPrisB = () => (
+  <div className="flex h-full flex-col items-start justify-center p-8">
+    <H1>Le parti pris</H1>
+    <Divider />
+    <P>Contenu à venir.</P>
+  </div>
+);
+
+/* ─── Variante 2 — Le logo ───────────────────────────────── */
+
+export const SlideLogoB = () => (
+  <div className="flex h-full flex-col items-start justify-center p-8">
+    <H1>Le logo</H1>
+    <Divider />
+    <P>Contenu à venir.</P>
+  </div>
+);
+
+/* ─── Variante 2 — La typographie ────────────────────────── */
+
+export const SlideTypoB = () => (
+  <div className="flex h-full flex-col items-start justify-center p-8">
+    <H1>La typographie</H1>
+    <Divider />
+    <P>Contenu à venir.</P>
+  </div>
+);
+
+/* ─── Variante 2 — Couleur alternative ───────────────────── */
+
+export const SlideCouleurAlt = () => (
+  <div className="flex h-full flex-col items-start justify-center p-8">
+    <H1>Couleur alternative</H1>
+    <Divider />
+    <P>Contenu à venir.</P>
+  </div>
+);
+
+/* ─── Retours & décisions ────────────────────────────────── */
+
+export const SlideRetours = () => (
+  <div className="flex h-full flex-col items-start justify-center p-8">
+    <H1>Retours &amp; décisions</H1>
+    <Divider />
+    <P>Contenu à venir.</P>
+  </div>
+);
+
+/* ─── Univers visuel ─────────────────────────────────────── */
+
+export const SlideUniversVisuel = () => (
+  <div className="flex h-full flex-col items-start justify-center p-8">
+    <H1>Univers visuel</H1>
     <Divider />
     <P>Contenu à venir.</P>
   </div>
