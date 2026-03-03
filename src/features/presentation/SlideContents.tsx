@@ -8,7 +8,7 @@
 import { Badge } from '@components/ui/Badge';
 import { Card } from '@components/ui/Card';
 import { cn } from '@utils/cn';
-import type { ReactNode } from 'react';
+import { type ReactNode, useEffect, useState } from 'react';
 
 /* ─── Shared typographic primitives ─────────────────────────── */
 
@@ -28,8 +28,6 @@ const H1 = ({ children, className }: { children: ReactNode; className?: string }
 const P = ({ children, className }: { children: ReactNode; className?: string }) => (
   <div className={cn('max-w-2xl text-2xl leading-[1.7] text-(--sub)', className)}>{children}</div>
 );
-
-const Divider = () => <div className="bg-accent my-4 h-[3px] w-12 rounded-full" />;
 
 /* ─── 0. Couverture ─────────────────────────────────────────── */
 
@@ -1227,13 +1225,13 @@ export const SlideDeclinaisonsA = () => (
 /* ─── Variante 1 — Cohabitation RHNe ─────────────────────── */
 
 export const SlideCohabitationA = () => (
-  <div className="flex h-full items-center justify-center gap-5 p-10">
+  <div className="flex h-full flex-col items-start justify-center gap-8 p-10">
+    <img src="/images/RHne.svg" alt="Logo RHNe" className="h-28 object-contain" />
     <img
       src="/images/Variante_1.svg"
       alt="Logo Réso.ne — Cousinage"
       className="h-28 object-contain"
     />
-    <img src="/images/RHne.svg" alt="Logo RHNe" className="h-28 object-contain" />
   </div>
 );
 
@@ -1324,53 +1322,279 @@ export const SlideCouleursA = () => (
 /* ─── Variante 2 — Le parti pris ─────────────────────────── */
 
 export const SlidePartiPrisB = () => (
-  <div className="flex h-full flex-col items-start justify-center p-8">
+  <div className="flex h-full flex-col justify-between p-10">
     <H1>Le parti pris</H1>
-    <Divider />
+
+    <div className="grid grid-cols-[1fr_auto] items-end gap-20">
+      <div className="flex flex-col gap-5">
+        <p className="text-lg leading-relaxed text-(--sub)">
+          Cette direction crée une identité autonome. Réso.ne n&apos;est pas le petit frère du RHNe,
+          c&apos;est une marque qui existe par elle-même, lisible et mémorable sans contexte
+          hospitalier.
+        </p>
+
+        <p className="text-lg leading-relaxed text-(--sub)">
+          Le logo est un wordmark avec un symbole intégré. La flèche de redirection précède le nom,
+          elle vient du bas, tourne et pointe vers Réso.ne. C&apos;est le geste fondateur&nbsp;: on
+          redirige le patient vers le bon soin, au bon endroit. Le patient qui n&apos;a pas besoin
+          des urgences est orienté. La flèche fait ce travail en un regard.
+        </p>
+
+        <p className="text-lg leading-relaxed text-(--sub)">
+          La typographie est Manrope, indépendante du RHNe. Le logo vit seul. Il n&apos;a pas besoin
+          qu&apos;on connaisse l&apos;hôpital pour être compris. Sur une façade, une carte de visite
+          ou un écran de téléphone, le mot se lit et le geste se comprend instantanément.
+        </p>
+      </div>
+
+      <blockquote className="border-accent w-64 border-l-[3px] pl-6">
+        <span
+          className="text-fg leading-[1.3] font-medium tracking-tight"
+          style={{ fontSize: 'clamp(1.1rem, 2vw, 1.5rem)' }}
+        >
+          Le premier geste de Réso.ne, c&apos;est de montrer le chemin.
+        </span>
+      </blockquote>
+    </div>
+
+    <div />
   </div>
 );
 
 /* ─── Variante 2 — Le logo ───────────────────────────────── */
 
 export const SlideLogoB = () => (
-  <div className="flex h-full flex-col items-start justify-center p-8">
-    <H1>Le logo</H1>
-    <Divider />
+  <div className="flex h-full items-center justify-center p-10">
+    <img
+      src="/images/Variante_2.svg"
+      alt="Réso.ne — Variante Émancipation"
+      className="animate-logo-reveal max-h-[45vh] max-w-[45vw] object-contain"
+    />
+  </div>
+);
+
+/* ─── Variante 2 — Déclinaisons ──────────────────────────── */
+
+export const SlideDeclinaisonsB = () => (
+  <div className="grid h-full grid-cols-2 grid-rows-2">
+    <div className="flex items-center justify-center bg-white">
+      <img
+        src="/images/Variante_2.svg"
+        alt="Logo sur fond blanc"
+        className="max-h-[60%] max-w-[60%] object-contain"
+      />
+    </div>
+    <div className="flex items-center justify-center bg-black">
+      <img
+        src="/images/Variante_2.svg"
+        alt="Logo sur fond noir"
+        className="max-h-[60%] max-w-[60%] object-contain brightness-0 invert"
+      />
+    </div>
+    <div className="flex items-center justify-center" style={{ backgroundColor: 'var(--teal)' }}>
+      <img
+        src="/images/Variante_2.svg"
+        alt="Logo sur fond teal"
+        className="max-h-[60%] max-w-[60%] object-contain brightness-0 invert"
+      />
+    </div>
+    <div className="flex items-center justify-center bg-gray-100">
+      <img
+        src="/images/Variante_2.svg"
+        alt="Logo sur fond gris"
+        className="max-h-[60%] max-w-[60%] object-contain"
+      />
+    </div>
+  </div>
+);
+
+/* ─── Variante 2 — Cohabitation RHNe ────────────────────── */
+
+export const SlideCohabitationB = () => (
+  <div className="flex h-full flex-col items-start justify-center gap-8 p-10">
+    <img src="/images/RHne.svg" alt="Logo RHNe" className="h-28 object-contain" />
+    <img
+      src="/images/Variante_2.svg"
+      alt="Logo Réso.ne — Émancipation"
+      className="h-28 object-contain"
+    />
   </div>
 );
 
 /* ─── Variante 2 — La typographie ────────────────────────── */
 
 export const SlideTypoB = () => (
-  <div className="flex h-full flex-col items-start justify-center p-8">
-    <H1>La typographie</H1>
-    <Divider />
+  <div className="flex h-full flex-col justify-between p-10">
+    <H1>Manrope</H1>
+
+    <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-1">
+        <p className="text-fg text-4xl font-light tracking-wide">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+        <p className="text-fg text-4xl font-light tracking-wide">abcdefghijklmnopqrstuvwxyz</p>
+        <p className="text-fg text-4xl font-light tracking-wide">0123456789</p>
+      </div>
+
+      <div className="flex max-w-[75%] flex-col gap-4">
+        <p className="text-lg leading-relaxed text-(--sub)">
+          Manrope est une sans-serif géométrique open-source. Ses formes sont plus rondes et plus
+          chaleureuses que Proxima Nova, on s&apos;éloigne du ton institutionnel du RHNe pour
+          quelque chose de plus accessible, plus humain.
+        </p>
+        <p className="text-lg leading-relaxed text-(--sub)">
+          C&apos;est une rupture volontaire. Réso.ne parle avec sa propre voix. Le patient qui entre
+          dans un centre médical Réso.ne ne doit pas avoir l&apos;impression d&apos;entrer à
+          l&apos;hôpital.
+        </p>
+        <p className="text-lg leading-relaxed text-(--sub)">
+          Elle est performante sur écran, lisible à toutes les tailles, et disponible gratuitement,
+          un avantage concret pour un réseau qui va devoir équiper plusieurs centres sans payer de
+          licence typographique.
+        </p>
+        <p className="text-sm text-(--muted) italic">
+          Pour la bureautique, Arial reste la police de substitution.
+        </p>
+      </div>
+    </div>
+
+    <div />
   </div>
 );
 
 /* ─── Variante 2 — Couleur alternative ───────────────────── */
 
-export const SlideCouleurAlt = () => (
-  <div className="flex h-full flex-col items-start justify-center p-8">
-    <H1>Couleur alternative</H1>
-    <Divider />
-  </div>
-);
+const PALETTES = [
+  { bg: '#C4B8DB', logo: '#8B7BAE' },
+  { bg: '#A8CFB8', logo: '#6A9B7E' },
+  { bg: '#E4BBA8', logo: '#B8856E' },
+  { bg: '#A7BDCF', logo: '#6E839B' },
+  { bg: '#C9AEBE', logo: '#8E7082' },
+];
+
+export const SlideCouleurAlt = () => {
+  const [idx, setIdx] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIdx(prev => (prev + 1) % PALETTES.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const palette = PALETTES[idx];
+
+  return (
+    <div
+      className="flex h-full flex-col items-center justify-between p-10 transition-colors duration-2500"
+      style={{ backgroundColor: palette?.bg }}
+    >
+      <div />
+
+      <div
+        className="h-[15vh] w-[50vw] transition-colors duration-2500"
+        style={{
+          backgroundColor: palette?.logo,
+          maskImage: 'url(/images/Variante_2.svg)',
+          WebkitMaskImage: 'url(/images/Variante_2.svg)',
+          maskSize: 'contain',
+          WebkitMaskSize: 'contain',
+          maskRepeat: 'no-repeat',
+          WebkitMaskRepeat: 'no-repeat',
+          maskPosition: 'center',
+          WebkitMaskPosition: 'center',
+        }}
+        role="img"
+        aria-label="Logo Réso.ne"
+      />
+
+      <p className="text-center text-sm" style={{ color: palette?.logo }}>
+        Le système fonctionne avec n&apos;importe quelle palette. Le teal RHNe est notre
+        recommandation, mais l&apos;identité n&apos;en dépend pas.
+      </p>
+    </div>
+  );
+};
 
 /* ─── Retours & décisions ────────────────────────────────── */
 
+const RETOURS = [
+  {
+    num: 1,
+    title: 'Le naming',
+    text: 'Quelle variante vous parle le plus ? Nom de ville, descripteur par activité, ou nom local + ville ? Et comment voyez-vous la déclinaison au quotidien\u00a0\u2014 sur une façade, un formulaire, au téléphone ?',
+  },
+  {
+    num: 2,
+    title: 'La direction visuelle',
+    text: 'Cousinage ou Émancipation ? Le lien visuel avec le RHNe est-il un atout à maintenir ou un poids dont il faut s\u2019affranchir ?',
+  },
+  {
+    num: 3,
+    title: 'Les priorités',
+    text: 'Quels sont les premiers points de contact à traiter ? La signalétique des centres, le site web, la papeterie, les tenues ? L\u2019ordre dans lequel on déploie dépend de vos urgences opérationnelles.',
+  },
+];
+
 export const SlideRetours = () => (
-  <div className="flex h-full flex-col items-start justify-center p-8">
-    <H1>Retours &amp; décisions</H1>
-    <Divider />
+  <div className="flex h-full flex-col justify-between p-10">
+    <div>
+      <H1>On a besoin de vos retours sur trois points</H1>
+    </div>
+
+    <div className="grid grid-cols-3 gap-6">
+      {RETOURS.map(r => (
+        <Card key={r.num} padding="lg" className="flex flex-col gap-3">
+          <span className="text-accent font-mono text-2xl font-bold">{r.num}</span>
+          <span className="text-fg text-lg font-medium">{r.title}</span>
+          <p className="text-base leading-relaxed text-(--sub)">{r.text}</p>
+        </Card>
+      ))}
+    </div>
+
+    <div />
   </div>
 );
 
-/* ─── Univers visuel ─────────────────────────────────────── */
+/* ─── La suite ───────────────────────────────────────────── */
 
 export const SlideUniversVisuel = () => (
-  <div className="flex h-full flex-col items-start justify-center p-8">
-    <H1>Univers visuel</H1>
-    <Divider />
+  <div className="flex h-full flex-col justify-between p-10">
+    <H1>La suite</H1>
+
+    <div className="flex max-w-[70%] flex-col gap-5">
+      <p className="text-lg leading-relaxed text-(--sub)">
+        Cette présentation couvre la stratégie de naming, l&apos;architecture de marque et deux
+        directions créatives pour le logo et la typographie. C&apos;est la fondation.
+      </p>
+      <p className="text-lg leading-relaxed text-(--sub)">
+        L&apos;étape suivante est l&apos;univers visuel&nbsp;: comment le logo, les couleurs et la
+        typographie se déclinent sur l&apos;ensemble des supports. Signalétique extérieure et
+        intérieure, site web, papeterie, cartes de visite, tenues du personnel, communication
+        patient. C&apos;est là que l&apos;identité prend corps, pas dans un PDF mais sur une façade,
+        un écran, un tampon.
+      </p>
+      <p className="text-lg leading-relaxed text-(--sub)">
+        Une fois la direction validée, on définit ensemble les points de contact prioritaires et on
+        produit des mockups réalistes. L&apos;objectif&nbsp;: qu&apos;on se rende compte ensemble de
+        ce que ça donne dans la vraie vie, avant de déployer quoi que ce soit. Ce volet fera
+        l&apos;objet d&apos;un mandat complémentaire à deviser.
+      </p>
+    </div>
+
+    <div />
+  </div>
+);
+
+/* ─── Merci ──────────────────────────────────────────────── */
+
+export const SlideMerci = () => (
+  <div className="flex h-full flex-col items-center justify-center gap-10 p-10">
+    <h1 className="text-fg text-7xl font-bold tracking-tight">Merci.</h1>
+
+    <div className="flex flex-col items-center gap-2 text-lg text-(--sub)">
+      <span className="text-fg font-medium">Mirco Tamburini</span>
+      <span>mirco@costaud.ch</span>
+      <span>079 626 95 32</span>
+      <span>costaud.ch</span>
+    </div>
   </div>
 );

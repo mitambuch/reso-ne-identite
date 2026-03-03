@@ -19,15 +19,18 @@ import {
   SlideBenchmark,
   SlideChiffres,
   SlideCohabitationA,
+  SlideCohabitationB,
   SlideCouleurAlt,
   SlideCouleursA,
   SlideCouverture,
   SlideDeclinaisonsA,
+  SlideDeclinaisonsB,
   SlideDefi,
   SlideDemain,
   SlideExtensibilite,
   SlideLogoA,
   SlideLogoB,
+  SlideMerci,
   SlideMission,
   SlideNomenclature,
   SlideParcours,
@@ -88,11 +91,14 @@ const SLIDE_COMPONENTS: FC[] = [
   /* VARIANTE 2 — Émancipation */
   SlidePartiPrisB, // 26
   SlideLogoB, // 27
-  SlideTypoB, // 28
-  SlideCouleurAlt, // 29
+  SlideDeclinaisonsB, // 28
+  SlideCohabitationB, // 29
+  SlideTypoB, // 30
+  SlideCouleurAlt, // 31
   /* PROCHAINES ÉTAPES */
-  SlideRetours, // 30
-  SlideUniversVisuel, // 31
+  SlideRetours, // 32
+  SlideUniversVisuel, // 33
+  SlideMerci, // 34
 ];
 
 /* ═══════════════════════════════════════════════════════════════ */
