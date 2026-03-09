@@ -45,15 +45,16 @@ export const SECTIONS: Section[] = [
   /* ── IDENTITÉ VISUELLE — Détails ────────────────────────── */
   { title: 'Le parti pris', layout: 'default' }, // 17
   { title: 'Le logo', layout: 'default' }, // 18
-  { title: 'Déclinaisons', layout: 'default' }, // 19
-  { title: 'Cohabitation RHNe', layout: 'default' }, // 20
-  { title: 'La typographie', layout: 'default' }, // 21
-  { title: 'Les couleurs', layout: 'default' }, // 22
+  { title: 'Construction', layout: 'default' }, // 19
+  { title: 'Déclinaisons', layout: 'default' }, // 20
+  { title: 'Cohabitation RHNe', layout: 'default' }, // 21
+  { title: 'La typographie', layout: 'default' }, // 22
+  { title: 'Les couleurs', layout: 'default' }, // 23
 
   /* ── PROCHAINES ÉTAPES ──────────────────────────────────── */
-  { title: 'Retours & décisions', layout: 'default' }, // 23
-  { title: 'La suite', layout: 'default' }, // 24
-  { title: 'Merci', layout: 'default' }, // 25
+  { title: 'Retours & décisions', layout: 'default' }, // 24
+  { title: 'La suite', layout: 'default' }, // 25
+  { title: 'Merci', layout: 'default' }, // 26
 ];
 
 export const TOTAL_SLIDES = SECTIONS.length;
@@ -64,6 +65,6 @@ export const NAV_GROUPS: NavGroup[] = [
   { label: 'Analyse', items: [5, 6, 7, 8] },
   { label: 'Naming & Architecture', items: [9, 10, 11, 12, 13] },
   { label: 'Stratégie visuelle', items: [14, 15, 16] },
-  { label: 'Identité visuelle', items: [17, 18, 19, 20, 21, 22] },
-  { label: 'Prochaines étapes', items: [23, 24, 25] },
+  { label: 'Identité visuelle', items: [17, 18, 19, 20, 21, 22, 23] },
+  { label: 'Prochaines étapes', items: [24, 25, 26] },
 ];

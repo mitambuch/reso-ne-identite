@@ -60,7 +60,7 @@ export const SlideCouverture = () => (
           className="text-accent leading-none font-bold tracking-tight"
           style={{ fontSize: 'clamp(2rem, 4vw, 3.2rem)' }}
         >
-          Réso.ne
+          réso.ne
         </span>
         <span className="mt-1 text-base text-(--sub)">
           Réseau de soins ambulatoires de proximité — Canton de Neuchâtel
@@ -87,10 +87,10 @@ export const SlideApproche = () => (
     <div className="grid grid-cols-[1fr_auto] items-end gap-20">
       <div className="flex flex-col gap-6">
         <P className="max-w-none">
-          Ce projet n&apos;est pas un exercice de décoration. L&apos;identité de Réso.ne doit
+          Ce projet n&apos;est pas un exercice de décoration. L&apos;identité de réso.ne doit
           résoudre un problème concret&nbsp;:{' '}
           <strong className="text-accent">
-            quand un patient neuchâtelois a besoin de soins, il doit penser à Réso.ne avant de
+            quand un patient neuchâtelois a besoin de soins, il doit penser à réso.ne avant de
             penser aux urgences de l&apos;hôpital.
           </strong>
         </P>
@@ -177,13 +177,13 @@ export const SlidePrincipes = () => (
 const CHIFFRES = [
   {
     value: '370\u2019805',
-    text: 'Passages ambulatoires au RHNe en 2024. Record historique. L\u2019ambulatoire croît pendant que l\u2019hospitalisation baisse. Le virage est en cours, Réso.ne doit en devenir le visage.',
+    text: 'Passages ambulatoires au RHNe en 2024. Record historique. L\u2019ambulatoire croît pendant que l\u2019hospitalisation baisse. Le virage est en cours, réso.ne doit en devenir le visage.',
     source: 'RTN, 19.05.2025',
     url: 'https://www.rtn.ch/rtn/Actualite/Region/20250519-RHNe-un-deficit-deux-fois-plus-important-qu-imagine.html',
   },
   {
     value: '430',
-    text: 'Patients hospitalisés en janvier 2025, contre 340-360 en temps normal. Urgences saturées, le canton demande publiquement aux gens de ne pas venir aux urgences pour les cas non vitaux. C\u2019est exactement le rôle de Réso.ne.',
+    text: 'Patients hospitalisés en janvier 2025, contre 340-360 en temps normal. Urgences saturées, le canton demande publiquement aux gens de ne pas venir aux urgences pour les cas non vitaux. C\u2019est exactement le rôle de réso.ne.',
     source: 'RTS, 08.01.2025',
     url: 'https://www.rts.ch/info/regions/neuchatel/2025/article/urgences-rhne-saturees-alternatives-pour-les-cas-non-vitaux-a-neuchatel-28748676.html',
   },
@@ -195,7 +195,7 @@ const CHIFFRES = [
   },
   {
     value: '2 / 4',
-    text: 'Deux identités visuelles pour quatre centres. Le logo Volta (3 sites) et le logo Cadolles (1 site). Aucun ne dit \u201créseau\u201d. Aucun ne dit \u201cRéso.ne\u201d. Le patient ne sait pas que ces centres sont liés entre eux ni au RHNe.',
+    text: 'Deux identités visuelles pour quatre centres. Le logo Volta (3 sites) et le logo Cadolles (1 site). Aucun ne dit \u201créseau\u201d. Aucun ne dit \u201créso.ne\u201d. Le patient ne sait pas que ces centres sont liés entre eux ni au RHNe.',
     source: 'Audit interne',
   },
 ] as const;
@@ -236,7 +236,7 @@ export const SlideChiffres = () => (
   </div>
 );
 
-/* ─── 4. Ce qu'est Réso.ne ──────────────────────────────────── */
+/* ─── 4. Ce qu'est réso.ne ──────────────────────────────────── */
 
 const ACTIVITES = [
   {
@@ -259,9 +259,9 @@ const ACTIVITES = [
 export const SlideResoNe = () => (
   <div className="flex h-full flex-col justify-between p-10">
     <div>
-      <H1>Ce qu&apos;est Réso.ne</H1>
+      <H1>Ce qu&apos;est réso.ne</H1>
       <P className="mt-2 max-w-none">
-        Réso.ne est une SA née du rachat du Groupe Santé Volta par le RHNe fin 2025. Quatre centres,
+        réso.ne est une SA née du rachat du Groupe Santé Volta par le RHNe fin 2025. Quatre centres,
         trois types d&apos;activités, un réseau.
       </P>
     </div>
@@ -284,7 +284,7 @@ export const SlideResoNe = () => (
 
 const PARCOURS = [
   'Le RHNe sort de ses murs',
-  'Les médecins hospitaliers consultent dans les centres Réso.ne',
+  'Les médecins hospitaliers consultent dans les centres réso.ne',
   'Le patient qui a besoin de l\u2019hôpital est orienté vers le RHNe',
   'Continuum de soins',
 ] as const;
@@ -332,7 +332,7 @@ export const SlideMission = () => (
 const POSITIONS = [
   {
     keyword: 'Juridiquement séparé',
-    text: 'Réso.ne est une SA indépendante, pas une entité étatique.',
+    text: 'réso.ne est une SA indépendante, pas une entité étatique.',
   },
   {
     keyword: 'Administrativement indépendant',
@@ -340,7 +340,7 @@ const POSITIONS = [
   },
   {
     keyword: 'Fonctionnellement complémentaire',
-    text: 'Les médecins du RHNe consultent dans les centres Réso.ne. Le patient circule entre les deux sans rupture.',
+    text: 'Les médecins du RHNe consultent dans les centres réso.ne. Le patient circule entre les deux sans rupture.',
   },
 ] as const;
 
@@ -377,7 +377,7 @@ export const SlideAnalyse = () => (
 
     <div className="flex flex-col gap-6">
       <P className="max-w-none">
-        Avant de dessiner quoi que ce soit, on a analysé le paysage dans lequel Réso.ne va évoluer.
+        Avant de dessiner quoi que ce soit, on a analysé le paysage dans lequel réso.ne va évoluer.
         Qui sont les acteurs de la santé ambulatoire en Suisse romande, comment ils se présentent,
         ce qui fonctionne et ce qui ne fonctionne pas.
       </P>
@@ -387,7 +387,7 @@ export const SlideAnalyse = () => (
         de la Côte (EHC), qui gère plus de 30 établissements sous une identité distinctive et
         chaleureuse. Vidymed à Lausanne, le benchmark en expérience digitale patient. Et Unisanté,
         l&apos;ancien bras ambulatoire du CHUV devenu autonome en 2019&nbsp;— le précédent
-        structurel le plus directement comparable à ce que Réso.ne doit devenir.
+        structurel le plus directement comparable à ce que réso.ne doit devenir.
       </P>
     </div>
 
@@ -407,7 +407,7 @@ const BENCHMARKS = [
   {
     name: 'Medbase',
     stats: '150+ sites · Propriété de Migros · 4\u2019400 employés',
-    text: 'Le plus grand réseau ambulatoire de Suisse. Centres médicaux, pharmacies, dentistes, physiothérapie, médecine du sport. Un seul système de naming partout\u00a0: \u201cMedbase + Ville\u201d. Ce n\u2019est pas un concurrent direct de Réso.ne\u00a0— ni la même échelle, ni le même modèle économique\u00a0— mais c\u2019est la référence en matière de naming ambulatoire unifié en Suisse.',
+    text: 'Le plus grand réseau ambulatoire de Suisse. Centres médicaux, pharmacies, dentistes, physiothérapie, médecine du sport. Un seul système de naming partout\u00a0: \u201cMedbase + Ville\u201d. Ce n\u2019est pas un concurrent direct de réso.ne\u00a0— ni la même échelle, ni le même modèle économique\u00a0— mais c\u2019est la référence en matière de naming ambulatoire unifié en Suisse.',
     url: 'https://www.medbase.ch',
   },
   {
@@ -419,13 +419,13 @@ const BENCHMARKS = [
   {
     name: 'Vidymed',
     stats: '3 centres + 4 urgences · Lausanne',
-    text: 'Le benchmark digital. Site mobile-first, sélecteur de centre intelligent, annuaire de 40+ spécialités. Design minimaliste et confiant. Le modèle à suivre pour l\u2019expérience patient en ligne\u00a0: clair, rapide, sans friction. L\u2019échelle est comparable à Réso.ne.',
+    text: 'Le benchmark digital. Site mobile-first, sélecteur de centre intelligent, annuaire de 40+ spécialités. Design minimaliste et confiant. Le modèle à suivre pour l\u2019expérience patient en ligne\u00a0: clair, rapide, sans friction. L\u2019échelle est comparable à réso.ne.',
     url: 'https://www.vidymed.ch',
   },
   {
     name: 'Unisanté',
     stats: '~1\u2019000 employés · Lausanne · Autonome depuis 2019',
-    text: 'L\u2019ancien bras ambulatoire du CHUV devenu un établissement autonome de droit public. Identité visuelle totalement indépendante du CHUV. Siège au Biopôle depuis octobre 2025. C\u2019est le modèle abouti de ce que Réso.ne peut devenir\u00a0: une entité ambulatoire qui existe par elle-même, sans être confondue avec l\u2019hôpital parent.',
+    text: 'L\u2019ancien bras ambulatoire du CHUV devenu un établissement autonome de droit public. Identité visuelle totalement indépendante du CHUV. Siège au Biopôle depuis octobre 2025. C\u2019est le modèle abouti de ce que réso.ne peut devenir\u00a0: une entité ambulatoire qui existe par elle-même, sans être confondue avec l\u2019hôpital parent.',
     url: 'https://www.unisante.ch',
   },
 ] as const;
@@ -501,13 +501,13 @@ export const SlideParcours = () => (
         </div>
       </div>
 
-      {/* Row 4 — ↓ NON → Réso.ne Permanence */}
+      {/* Row 4 — ↓ NON → réso.ne Permanence */}
       <div className="flex flex-col items-center">
         <span className="text-accent text-2xl leading-none">&darr;</span>
         <span className="text-muted text-xs">NON</span>
       </div>
       <div className="border-accent/40 bg-accent/10 rounded-md border px-5 py-3">
-        <div className="text-accent text-base font-bold">Réso.ne &mdash; Permanence médicale</div>
+        <div className="text-accent text-base font-bold">réso.ne &mdash; Permanence médicale</div>
         <div className="text-sm text-(--sub)">
           Sans rendez-vous &middot; adultes &middot; petite traumatologie
         </div>
@@ -521,11 +521,11 @@ export const SlideParcours = () => (
         </div>
         <span className="text-accent shrink-0 text-sm font-bold">OUI &rarr;</span>
         <div className="border-accent/40 bg-accent/10 rounded-md border px-4 py-2 text-sm">
-          <strong className="text-accent">Réso.ne</strong> &mdash; 1er recours
+          <strong className="text-accent">réso.ne</strong> &mdash; 1er recours
         </div>
         <span className="text-muted text-sm">&rarr;</span>
         <div className="border-accent/40 bg-accent/10 rounded-md border px-4 py-2 text-sm">
-          <strong className="text-accent">Réso.ne</strong> &mdash; Spécialistes
+          <strong className="text-accent">réso.ne</strong> &mdash; Spécialistes
         </div>
       </div>
 
@@ -547,12 +547,12 @@ export const SlideParcours = () => (
         <span className="text-muted text-xs">NON</span>
       </div>
       <div className="border-accent/40 bg-accent/10 text-fg rounded-md border px-5 py-3 text-base">
-        Le patient reste dans le réseau <strong className="text-accent">Réso.ne</strong>
+        Le patient reste dans le réseau <strong className="text-accent">réso.ne</strong>
       </div>
     </div>
 
     <p className="text-muted mt-4 text-base italic">
-      Réso.ne est la porte d&apos;entrée. Le RHNe est le filet de sécurité. Le patient circule entre
+      réso.ne est la porte d&apos;entrée. Le RHNe est le filet de sécurité. Le patient circule entre
       les deux sans rupture.
     </p>
   </div>
@@ -562,18 +562,18 @@ export const SlideParcours = () => (
 
 const CENTRES = [
   {
-    name: 'Groupe Santé Volta',
+    name: 'Permanence Volta',
     lieu: 'La Chaux-de-Fonds',
     detail: 'Permanence + consultations gynécologie',
-    note: 'Bâtiment Volta (PPE, autres médecins présents non liés à Réso.ne)',
+    note: 'Bâtiment Volta (PPE, autres médecins présents non liés à réso.ne)',
   },
   {
-    name: 'Groupe Santé Volta',
+    name: 'Permanence Volta Fleurier',
     lieu: 'Val-de-Travers',
     detail: 'Consultations gynécologie',
   },
   {
-    name: 'Groupe Santé Volta',
+    name: 'Volta Val-de-Ruz',
     lieu: 'Val-de-Ruz',
     detail: 'Consultations uniquement',
   },
@@ -627,10 +627,10 @@ export const SlideAujourdhui = () => (
 /* ─── 12. Demain ─────────────────────────────────────────── */
 
 const CENTRES_DEMAIN = [
-  'Centre 1 — Neuchâtel',
-  'Centre 2 — La Chaux-de-Fonds',
-  'Centre 3 — Val-de-Travers',
-  'Centre 4 — Val-de-Ruz',
+  'réso.ne\nCentre médical\nde Neuchâtel',
+  'réso.ne\nCentre médical\nde La Chaux-de-Fonds',
+  'réso.ne\nCentre médical\ndu Val-de-Travers',
+  'réso.ne\nCentre médical\ndu Val-de-Ruz',
 ] as const;
 
 export const SlideDemain = () => (
@@ -652,13 +652,13 @@ export const SlideDemain = () => (
       {/* Dotted connector */}
       <div className="border-border/60 flex-1 border-l border-dashed" />
 
-      {/* Réso.ne — bloc principal dominant */}
+      {/* réso.ne — bloc principal dominant */}
       <div className="border-accent/40 bg-accent/10 w-full max-w-lg rounded-xl border-2 px-12 py-8 text-center">
         <span
           className="text-accent font-bold tracking-tight"
           style={{ fontSize: 'clamp(2.5rem, 5vw, 3.5rem)' }}
         >
-          Réso.ne
+          réso.ne
         </span>
         <p className="mt-2 text-lg text-(--sub)">Marque réseau</p>
       </div>
@@ -685,7 +685,7 @@ export const SlideDemain = () => (
             key={c}
             className="border-accent/30 bg-accent/5 rounded-lg border px-4 py-5 text-center"
           >
-            <span className="text-fg text-base font-medium">{c}</span>
+            <p className="text-fg text-sm leading-tight font-semibold whitespace-pre-line">{c}</p>
           </div>
         ))}
       </div>
@@ -715,7 +715,7 @@ export const SlideStrategie = () => (
     <div className="grid grid-cols-[1fr_auto] items-end gap-20">
       <div className="flex flex-col gap-5">
         <p className="text-lg leading-relaxed text-(--sub)">
-          L&apos;identité de Réso.ne doit être assez proche du RHNe pour rassurer, assez différente
+          L&apos;identité de réso.ne doit être assez proche du RHNe pour rassurer, assez différente
           pour ne pas être confondue avec l&apos;hôpital, et assez modulaire pour grandir.
         </p>
 
@@ -724,7 +724,7 @@ export const SlideStrategie = () => (
           c&apos;est le plus grand employeur de santé du canton, des centaines de médecins, une
           infrastructure que tout le monde connaît. Même si l&apos;image de l&apos;hôpital peut être
           discutée par certains, la portée et la crédibilité du réseau hospitalier restent un levier
-          puissant pour un nouveau réseau ambulatoire. Réso.ne a tout intérêt à s&apos;appuyer
+          puissant pour un nouveau réseau ambulatoire. réso.ne a tout intérêt à s&apos;appuyer
           dessus plutôt qu&apos;à s&apos;en cacher.
         </p>
 
@@ -758,12 +758,12 @@ const DEFIS = [
   {
     num: 1,
     title: 'Rassurer les convaincus',
-    text: 'Les patients qui font confiance au RHNe doivent sentir que Réso.ne est fiable et rattaché au réseau hospitalier. Pour eux, le lien avec l\u2019hôpital est un gage de qualité.',
+    text: 'Les patients qui font confiance au RHNe doivent sentir que réso.ne est fiable et rattaché au réseau hospitalier. Pour eux, le lien avec l\u2019hôpital est un gage de qualité.',
   },
   {
     num: 2,
     title: 'Séduire les méfiants',
-    text: 'Les patients méfiants envers les hôpitaux — une réalité à La Chaux-de-Fonds comme à Neuchâtel — doivent percevoir Réso.ne comme leur centre médical de proximité, pas une annexe hospitalière.',
+    text: 'Les patients méfiants envers les hôpitaux — une réalité à La Chaux-de-Fonds comme à Neuchâtel — doivent percevoir réso.ne comme leur centre médical de proximité, pas une annexe hospitalière.',
   },
   {
     num: 3,
@@ -801,7 +801,7 @@ export const SlideDefi = () => (
 
 const NIVEAUX = [
   {
-    display: 'Réso.ne',
+    display: 'réso.ne',
     displayStyle: 'text-accent font-bold tracking-tight',
     fontSize: 'clamp(2rem, 4vw, 3rem)',
     tag: 'Niveau 1',
@@ -817,7 +817,7 @@ const NIVEAUX = [
     text: 'Ce que le patient dit, ce qu\u2019il cherche sur Google, ce qu\u2019il lit en arrivant. C\u2019est le nom du quotidien.',
   },
   {
-    display: 'Réso.ne — Centre médical de [lieu]',
+    display: 'réso.ne — Centre médical de [lieu]',
     displayStyle: 'text-fg font-medium tracking-tight',
     fontSize: 'clamp(1.2rem, 2.4vw, 1.7rem)',
     tag: 'Niveau 3',
@@ -864,20 +864,15 @@ export const SlideNomenclature = () => (
 /* ─── 16. Variante A — Nom de ville ──────────────────────── */
 
 const VARIANTE_A = [
-  { marque: 'Réso.ne', descripteur: 'Centre médical', lieu: 'de Neuchâtel' },
-  { marque: 'Réso.ne', descripteur: 'Centre médical', lieu: 'de La Chaux-de-Fonds' },
-  { marque: 'Réso.ne', descripteur: 'Centre médical', lieu: 'du Val-de-Travers' },
-  { marque: 'Réso.ne', descripteur: 'Centre médical', lieu: 'du Val-de-Ruz' },
+  { marque: 'réso.ne', descripteur: 'Centre médical', lieu: 'de Neuchâtel' },
+  { marque: 'réso.ne', descripteur: 'Centre médical', lieu: 'de La Chaux-de-Fonds' },
+  { marque: 'réso.ne', descripteur: 'Centre médical', lieu: 'du Val-de-Travers' },
+  { marque: 'réso.ne', descripteur: 'Centre médical', lieu: 'du Val-de-Ruz' },
 ] as const;
 
 export const SlideVarianteA = () => (
   <div className="flex h-full flex-col p-10">
-    <div className="flex items-baseline gap-4">
-      <H1>Variante A — Nom de ville</H1>
-      <Badge variant="success" size="sm">
-        Recommandée
-      </Badge>
-    </div>
+    <H1>Nouvelle nomenclature</H1>
 
     <div className="mt-2 flex flex-1 flex-col justify-evenly">
       {VARIANTE_A.map((c, i) => (
@@ -921,19 +916,19 @@ export const SlideVarianteA = () => (
 const EXTENSIBILITE = [
   {
     label: 'Un centre d\u2019ophtalmologie ouvre à Milvignes',
-    marque: 'Réso.ne',
+    marque: 'réso.ne',
     descripteur: 'Centre d\u2019ophtalmologie',
     lieu: 'de Milvignes',
   },
   {
     label: 'Un cabinet de gynécologie ouvre au Landeron',
-    marque: 'Réso.ne',
+    marque: 'réso.ne',
     descripteur: 'Cabinet de gynécologie',
     lieu: 'du Landeron',
   },
   {
     label: 'Un cabinet de médecine générale ouvre au Locle',
-    marque: 'Réso.ne',
+    marque: 'réso.ne',
     descripteur: 'Cabinet médical',
     lieu: 'du Locle',
   },
@@ -967,7 +962,7 @@ export const SlideExtensibilite = () => (
     <div className="mt-4">
       <p className="text-base leading-relaxed text-(--sub)">
         Le descripteur s&apos;adapte à l&apos;activité. Le lieu s&apos;adapte à la géographie.
-        Réso.ne reste constant. Quel que soit le type de structure ou la localisation dans le
+        réso.ne reste constant. Quel que soit le type de structure ou la localisation dans le
         canton, le nom se construit tout seul. Pas besoin de réinventer le système à chaque
         ouverture.
       </p>
@@ -979,14 +974,14 @@ export const SlideExtensibilite = () => (
 
 export const SlidePartiPrisA = () => (
   <div className="flex h-full flex-col justify-between p-10">
-    <H1>Le parti pris</H1>
+    <H1>Votre nouveau logo</H1>
 
     <div className="grid grid-cols-[1fr_auto] items-end gap-20">
       <div className="flex flex-col gap-5">
         <p className="text-lg leading-relaxed text-(--sub)">
-          Cette direction maintient un lien visuel direct avec le RHNe. Même typographie, Proxima
-          Nova. Même palette teal. Même logique de forme carrée pour le symbole. Un patient qui
-          connaît l&apos;hôpital sentira immédiatement quelque chose de familier.
+          Ce logo maintient un lien visuel direct avec le RHNe. Même typographie, Proxima Nova. Même
+          palette teal. Même logique de forme carrée pour le symbole. Un patient qui connaît
+          l&apos;hôpital sentira immédiatement quelque chose de familier.
         </p>
 
         <p className="text-lg leading-relaxed text-(--sub)">
@@ -1024,7 +1019,7 @@ export const SlideLogoA = () => (
   <div className="flex h-full items-center justify-center p-10">
     <img
       src="/images/Variante_1.svg"
-      alt="Réso.ne — Variante Cousinage"
+      alt="réso.ne — Variante Cousinage"
       className="animate-logo-reveal max-h-[45vh] max-w-[45vw] object-contain"
     />
 
@@ -1038,6 +1033,33 @@ export const SlideLogoA = () => (
         animation: logo-reveal 5s cubic-bezier(0.16, 1, 0.3, 1) both;
       }
     `}</style>
+  </div>
+);
+
+/* ─── Variante 1 — Construction du logo ─────────────────── */
+
+export const SlideConstructionA = () => (
+  <div className="flex h-full flex-col p-10">
+    <H1>Construction</H1>
+
+    {/* Image centrée, grande */}
+    <div className="flex flex-1 items-center justify-center">
+      <img
+        src="/images/reso-ne-construction.svg"
+        alt="Grille de construction du logo réso.ne"
+        className="max-h-[65vh] max-w-[70vw] object-contain"
+      />
+    </div>
+
+    {/* Texte en bas */}
+    <div className="max-w-3xl">
+      <p className="text-base leading-relaxed text-(--sub)">
+        Le logo est construit sur une grille stricte, en réutilisant les proportions de la
+        typographie Proxima Nova. Les éléments intérieurs suivent une logique en tiers&nbsp;: le
+        point plein sur le tiers gauche, l&apos;intersection des lignes sur le tiers droit, et le
+        point du réseau &mdash; celui du .ne &mdash; centré dans le troisième tiers du carré.
+      </p>
+    </div>
   </div>
 );
 
@@ -1072,11 +1094,11 @@ export const SlideDeclinaisonsA = () => (
       />
     </div>
 
-    {/* Gris clair */}
+    {/* Gris clair — texte teal */}
     <div className="flex items-center justify-center bg-gray-100">
       <img
-        src="/images/Variante_1.svg"
-        alt="Logo sur fond gris"
+        src="/images/Variante_1_teal.svg"
+        alt="Logo sur fond gris — texte teal"
         className="max-h-[60%] max-w-[60%] object-contain"
       />
     </div>
@@ -1086,13 +1108,12 @@ export const SlideDeclinaisonsA = () => (
 /* ─── Variante 1 — Cohabitation RHNe ─────────────────────── */
 
 export const SlideCohabitationA = () => (
-  <div className="flex h-full items-center justify-center gap-6 p-10">
+  <div className="flex h-full items-center justify-center p-10">
     <img
-      src="/images/Variante_1.svg"
-      alt="Logo Réso.ne — Cousinage"
-      className="h-24 object-contain"
+      src="/images/cohabitation.svg"
+      alt="Cohabitation réso.ne et RHNe"
+      className="max-h-[45vh] max-w-[55vw] object-contain"
     />
-    <img src="/images/RHne.svg" alt="Logo RHNe" className="h-24 object-contain" />
   </div>
 );
 
@@ -1100,19 +1121,51 @@ export const SlideCohabitationA = () => (
 
 export const SlideTypoA = () => (
   <div className="flex h-full flex-col justify-between p-10">
-    <H1>Proxima Nova</H1>
+    <div className="flex items-baseline gap-4">
+      <H1>Proxima Nova</H1>
+      <p className="text-sm text-(--sub)">
+        Police libre de droits, disponible sur{' '}
+        <a
+          href="https://fonts.google.com/specimen/Proxima+Nova"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-accent font-medium underline"
+        >
+          Google Fonts
+        </a>{' '}
+        &mdash; utilisable sans licence sur tous les supports.
+      </p>
+    </div>
 
     <div className="flex flex-col gap-6">
-      <div className="flex flex-col gap-1">
-        <p className="text-fg text-4xl font-light tracking-wide">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-        <p className="text-fg text-4xl font-light tracking-wide">abcdefghijklmnopqrstuvwxyz</p>
-        <p className="text-fg text-4xl font-light tracking-wide">0123456789</p>
+      {/* Specimen — une phrase, deux graisses */}
+      <div className="flex flex-col items-start">
+        <p
+          className="text-fg leading-[1.1] font-normal tracking-tight"
+          style={{ fontSize: 'clamp(3rem, 6vw, 5rem)' }}
+        >
+          Votre santé,
+        </p>
+        <p
+          className="text-fg leading-[1.1] font-bold tracking-tight"
+          style={{ fontSize: 'clamp(3rem, 6vw, 5rem)' }}
+        >
+          notre réseau.
+        </p>
+        <div className="mt-3 flex gap-6">
+          <span className="text-muted font-mono text-[10px] tracking-widest uppercase">
+            Regular &uarr;
+          </span>
+          <span className="text-muted font-mono text-[10px] tracking-widest uppercase">
+            Bold &uarr;
+          </span>
+        </div>
       </div>
 
       <div className="flex max-w-[75%] flex-col gap-4">
         <p className="text-lg leading-relaxed text-(--sub)">
           C&apos;est la même typographie que le RHNe. Le cousinage commence là. Le patient qui lit
-          un document du RHNe et un document de Réso.ne ressent une continuité sans pouvoir
+          un document du RHNe et un document de réso.ne ressent une continuité sans pouvoir
           l&apos;expliquer. C&apos;est subtil, mais c&apos;est le premier lien entre les deux
           marques.
         </p>

@@ -20,6 +20,7 @@ import {
   SlideBenchmark,
   SlideChiffres,
   SlideCohabitationA,
+  SlideConstructionA,
   SlideCouleursA,
   SlideCouverture,
   SlideDeclinaisonsA,
@@ -73,7 +74,8 @@ const SLIDE_COMPONENTS: FC[] = [
   /* IDENTITÉ VISUELLE — Détails */
   SlidePartiPrisA, // 17
   SlideLogoA, // 18
-  SlideDeclinaisonsA, // 19
+  SlideConstructionA, // 19
+  SlideDeclinaisonsA, // 20
   SlideCohabitationA, // 20
   SlideTypoA, // 21
   SlideCouleursA, // 22
