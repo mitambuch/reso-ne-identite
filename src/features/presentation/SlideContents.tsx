@@ -569,7 +569,7 @@ const CENTRES = [
   },
   {
     name: 'Groupe Santé Volta',
-    lieu: 'Fleurier',
+    lieu: 'Val-de-Travers',
     detail: 'Consultations gynécologie',
   },
   {
@@ -629,7 +629,7 @@ export const SlideAujourdhui = () => (
 const CENTRES_DEMAIN = [
   'Centre 1 — Neuchâtel',
   'Centre 2 — La Chaux-de-Fonds',
-  'Centre 3 — Fleurier',
+  'Centre 3 — Val-de-Travers',
   'Centre 4 — Val-de-Ruz',
 ] as const;
 
@@ -866,7 +866,7 @@ export const SlideNomenclature = () => (
 const VARIANTE_A = [
   { marque: 'Réso.ne', descripteur: 'Centre médical', lieu: 'de Neuchâtel' },
   { marque: 'Réso.ne', descripteur: 'Centre médical', lieu: 'de La Chaux-de-Fonds' },
-  { marque: 'Réso.ne', descripteur: 'Centre médical', lieu: 'de Fleurier' },
+  { marque: 'Réso.ne', descripteur: 'Centre médical', lieu: 'du Val-de-Travers' },
   { marque: 'Réso.ne', descripteur: 'Centre médical', lieu: 'du Val-de-Ruz' },
 ] as const;
 
