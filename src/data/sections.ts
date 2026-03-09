@@ -34,37 +34,26 @@ export const SECTIONS: Section[] = [
   { title: "Aujourd'hui", layout: 'default' }, // 9
   { title: 'Demain', layout: 'default' }, // 10
   { title: 'Nomenclature', layout: 'default' }, // 11
-  { title: 'Variante A', layout: 'default' }, // 12
-  { title: 'Variante B', layout: 'default' }, // 13
-  { title: 'Variante C', layout: 'default' }, // 14
-  { title: 'Volta', layout: 'default' }, // 15
-  { title: 'Extensibilité', layout: 'default' }, // 16
+  { title: 'Architecture de marque', layout: 'default' }, // 12
+  { title: 'Extensibilité', layout: 'default' }, // 13
 
   /* ── IDENTITÉ VISUELLE ──────────────────────────────────── */
-  { title: 'Le triple défi', layout: 'default' }, // 17
-  { title: 'Stratégie', layout: 'default' }, // 18
-  { title: 'Principes de design', layout: 'default' }, // 19
+  { title: 'Le triple défi', layout: 'default' }, // 14
+  { title: 'Stratégie', layout: 'default' }, // 15
+  { title: 'Principes de design', layout: 'default' }, // 16
 
-  /* ── VARIANTE 1 — Cousinage ─────────────────────────────── */
-  { title: 'Le parti pris', layout: 'default' }, // 20
-  { title: 'Le logo', layout: 'default' }, // 21
-  { title: 'Déclinaisons', layout: 'default' }, // 22
-  { title: 'Cohabitation RHNe', layout: 'default' }, // 23
-  { title: 'La typographie', layout: 'default' }, // 24
-  { title: 'Les couleurs', layout: 'default' }, // 25
-
-  /* ── VARIANTE 2 — Émancipation ──────────────────────────── */
-  { title: 'Le parti pris', layout: 'default' }, // 26
-  { title: 'Le logo', layout: 'default' }, // 27
-  { title: 'Déclinaisons', layout: 'default' }, // 28
-  { title: 'Cohabitation RHNe', layout: 'default' }, // 29
-  { title: 'La typographie', layout: 'default' }, // 30
-  { title: 'Couleur alternative', layout: 'default' }, // 31
+  /* ── IDENTITÉ VISUELLE — Détails ────────────────────────── */
+  { title: 'Le parti pris', layout: 'default' }, // 17
+  { title: 'Le logo', layout: 'default' }, // 18
+  { title: 'Déclinaisons', layout: 'default' }, // 19
+  { title: 'Cohabitation RHNe', layout: 'default' }, // 20
+  { title: 'La typographie', layout: 'default' }, // 21
+  { title: 'Les couleurs', layout: 'default' }, // 22
 
   /* ── PROCHAINES ÉTAPES ──────────────────────────────────── */
-  { title: 'Retours & décisions', layout: 'default' }, // 32
-  { title: 'La suite', layout: 'default' }, // 33
-  { title: 'Merci', layout: 'default' }, // 34
+  { title: 'Retours & décisions', layout: 'default' }, // 23
+  { title: 'La suite', layout: 'default' }, // 24
+  { title: 'Merci', layout: 'default' }, // 25
 ];
 
 export const TOTAL_SLIDES = SECTIONS.length;
@@ -73,9 +62,8 @@ export const NAV_GROUPS: NavGroup[] = [
   { label: 'Intro', items: [0, 1] },
   { label: 'Contexte', items: [2, 3, 4] },
   { label: 'Analyse', items: [5, 6, 7, 8] },
-  { label: 'Naming & Architecture', items: [9, 10, 11, 12, 13, 14, 15, 16] },
-  { label: 'Identité visuelle', items: [17, 18, 19] },
-  { label: 'Variante 1 — Cousinage', items: [20, 21, 22, 23, 24, 25] },
-  { label: 'Variante 2 — Émancipation', items: [26, 27, 28, 29, 30, 31] },
-  { label: 'Prochaines étapes', items: [32, 33, 34] },
+  { label: 'Naming & Architecture', items: [9, 10, 11, 12, 13] },
+  { label: 'Stratégie visuelle', items: [14, 15, 16] },
+  { label: 'Identité visuelle', items: [17, 18, 19, 20, 21, 22] },
+  { label: 'Prochaines étapes', items: [23, 24, 25] },
 ];

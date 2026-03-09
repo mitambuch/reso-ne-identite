@@ -12,6 +12,7 @@ import { PresentationHeader } from '@components/layout/PresentationHeader';
 import { Stage } from '@components/layout/Stage';
 import { Stepper } from '@components/layout/Stepper';
 import { NAV_GROUPS, SECTIONS, TOTAL_SLIDES } from '@data/sections';
+import { LockScreen } from '@features/presentation/LockScreen';
 import {
   SlideAnalyse,
   SlideApproche,
@@ -19,35 +20,26 @@ import {
   SlideBenchmark,
   SlideChiffres,
   SlideCohabitationA,
-  SlideCohabitationB,
-  SlideCouleurAlt,
   SlideCouleursA,
   SlideCouverture,
   SlideDeclinaisonsA,
-  SlideDeclinaisonsB,
   SlideDefi,
   SlideDemain,
   SlideExtensibilite,
   SlideLogoA,
-  SlideLogoB,
   SlideMerci,
   SlideMission,
   SlideNomenclature,
   SlideParcours,
   SlidePartiPrisA,
-  SlidePartiPrisB,
   SlidePositionnement,
   SlidePrincipes,
   SlideResoNe,
   SlideRetours,
   SlideStrategie,
   SlideTypoA,
-  SlideTypoB,
   SlideUniversVisuel,
   SlideVarianteA,
-  SlideVarianteB,
-  SlideVarianteC,
-  SlideVolta,
 } from '@features/presentation/SlideContents';
 import { useKeyboard } from '@hooks/useKeyboard';
 import type { FC } from 'react';
@@ -72,39 +64,32 @@ const SLIDE_COMPONENTS: FC[] = [
   SlideAujourdhui, // 9
   SlideDemain, // 10
   SlideNomenclature, // 11
-  SlideVarianteA, // 12
-  SlideVarianteB, // 13
-  SlideVarianteC, // 14
-  SlideVolta, // 15
-  SlideExtensibilite, // 16
+  SlideVarianteA, // 12 — Architecture de marque
+  SlideExtensibilite, // 13
   /* IDENTITÉ VISUELLE */
-  SlideDefi, // 17
-  SlideStrategie, // 18
-  SlidePrincipes, // 19
-  /* VARIANTE 1 — Cousinage */
-  SlidePartiPrisA, // 20
-  SlideLogoA, // 21
-  SlideDeclinaisonsA, // 22
-  SlideCohabitationA, // 23
-  SlideTypoA, // 24
-  SlideCouleursA, // 25
-  /* VARIANTE 2 — Émancipation */
-  SlidePartiPrisB, // 26
-  SlideLogoB, // 27
-  SlideDeclinaisonsB, // 28
-  SlideCohabitationB, // 29
-  SlideTypoB, // 30
-  SlideCouleurAlt, // 31
+  SlideDefi, // 14
+  SlideStrategie, // 15
+  SlidePrincipes, // 16
+  /* IDENTITÉ VISUELLE — Détails */
+  SlidePartiPrisA, // 17
+  SlideLogoA, // 18
+  SlideDeclinaisonsA, // 19
+  SlideCohabitationA, // 20
+  SlideTypoA, // 21
+  SlideCouleursA, // 22
   /* PROCHAINES ÉTAPES */
-  SlideRetours, // 32
-  SlideUniversVisuel, // 33
-  SlideMerci, // 34
+  SlideRetours, // 23
+  SlideUniversVisuel, // 24
+  SlideMerci, // 25
 ];
 
 /* ═══════════════════════════════════════════════════════════════ */
 
 export default function Home() {
   const [current, setCurrent] = useState(0);
+  const [unlocked, setUnlocked] = useState(
+    () => sessionStorage.getItem('presentation-unlocked') === '1',
+  );
 
   const goNext = useCallback(() => {
     setCurrent(prev => Math.min(prev + 1, TOTAL_SLIDES - 1));
@@ -119,6 +104,19 @@ export default function Home() {
   }, []);
 
   useKeyboard({ onNext: goNext, onPrev: goPrev });
+
+  /* ─── LockScreen gate ──────────────────────────────────────── */
+
+  if (!unlocked) {
+    return (
+      <LockScreen
+        onUnlock={() => {
+          sessionStorage.setItem('presentation-unlocked', '1');
+          setUnlocked(true);
+        }}
+      />
+    );
+  }
 
   /* ─── Compute section label for Stage ─────────────────────── */
 
