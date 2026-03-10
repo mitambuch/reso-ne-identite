@@ -19,14 +19,14 @@ const Label = ({ children }: { children: ReactNode }) => (
 const H1 = ({ children, className }: { children: ReactNode; className?: string }) => (
   <div
     className={cn('mb-3 leading-[1.1] font-medium tracking-tight', className)}
-    style={{ fontSize: 'clamp(2rem, 4vw, 3rem)' }}
+    style={{ fontSize: 'clamp(1.75rem, 3.5vw, 2.5rem)' }}
   >
     {children}
   </div>
 );
 
 const P = ({ children, className }: { children: ReactNode; className?: string }) => (
-  <div className={cn('max-w-2xl text-2xl leading-[1.7] text-(--sub)', className)}>{children}</div>
+  <div className={cn('max-w-2xl text-lg leading-[1.7] text-(--sub)', className)}>{children}</div>
 );
 
 /* ─── 0. Couverture ─────────────────────────────────────────── */
@@ -67,7 +67,7 @@ export const SlideCouverture = () => (
         </span>
       </div>
       <div className="text-muted flex flex-col items-end gap-0.5 text-sm">
-        <span>3 mars 2026</span>
+        <span>10 mars 2026</span>
         <span className="italic">Document confidentiel</span>
       </div>
     </div>
@@ -215,7 +215,7 @@ export const SlideChiffres = () => (
           >
             {c.value}
           </span>
-          <p className="flex-1 text-sm leading-relaxed text-(--sub)">{c.text}</p>
+          <p className="flex-1 text-base leading-relaxed text-(--sub)">{c.text}</p>
           {'url' in c && c.url ? (
             <a
               href={c.url}
@@ -441,7 +441,7 @@ export const SlideBenchmark = () => (
         <Card key={b.name} padding="md" className="flex flex-col gap-3">
           <span className="text-fg text-lg font-bold">{b.name}</span>
           <span className="text-accent font-mono text-xs">{b.stats}</span>
-          <p className="flex-1 text-sm leading-relaxed text-(--sub)">{b.text}</p>
+          <p className="flex-1 text-base leading-relaxed text-(--sub)">{b.text}</p>
           <a
             href={b.url}
             target="_blank"
@@ -611,7 +611,7 @@ export const SlideAujourdhui = () => (
         >
           <span className="text-fg text-lg font-bold">{c.name}</span>
           <span className="text-accent font-mono text-sm font-medium">{c.lieu}</span>
-          <p className="text-sm leading-relaxed text-(--sub)">{c.detail}</p>
+          <p className="text-base leading-relaxed text-(--sub)">{c.detail}</p>
           {'note' in c && c.note && <p className="text-muted mt-1 text-xs italic">{c.note}</p>}
         </div>
       ))}
@@ -709,7 +709,7 @@ export const SlideDemain = () => (
 
 export const SlideStrategie = () => (
   <div className="flex h-full flex-col justify-between p-10">
-    <H1>Deux directions, un principe</H1>
+    <H1>La direction retenue</H1>
 
     {/* Middle — deux colonnes : texte courant + citation */}
     <div className="grid grid-cols-[1fr_auto] items-end gap-20">
@@ -729,9 +729,9 @@ export const SlideStrategie = () => (
         </p>
 
         <p className="text-lg leading-relaxed text-(--sub)">
-          On propose donc deux directions. La première, Cousinage, maintient une parenté visuelle
-          avec le RHNe. La deuxième, Émancipation, crée une identité propre. Dans les deux cas, le
-          RHNe reste un endorsement discret. Le degré de proximité visuelle change.
+          La direction retenue maintient une parenté visuelle avec le RHNe&nbsp;: même typographie,
+          même famille de couleurs, même logique de forme. Le RHNe reste un endorsement discret.
+          L&apos;identité de réso.ne est propre, mais le lien de famille est lisible.
         </p>
       </div>
 
@@ -741,8 +741,7 @@ export const SlideStrategie = () => (
           className="text-fg leading-[1.3] font-medium tracking-tight"
           style={{ fontSize: 'clamp(1.1rem, 2vw, 1.5rem)' }}
         >
-          La question n&apos;est pas &laquo;&nbsp;est-ce qu&apos;on montre le lien&nbsp;&raquo; mais
-          &laquo;&nbsp;comment on le montre&nbsp;&raquo;.
+          On est dans la même famille, pas dans le même bâtiment.
         </span>
       </blockquote>
     </div>
@@ -1004,7 +1003,7 @@ export const SlidePartiPrisA = () => (
           className="text-fg leading-[1.3] font-medium tracking-tight"
           style={{ fontSize: 'clamp(1.1rem, 2vw, 1.5rem)' }}
         >
-          On est dans la même famille, pas dans le même bâtiment.
+          Un fragment suffit à comprendre le tout.
         </span>
       </blockquote>
     </div>
@@ -1233,6 +1232,34 @@ export const SlideCouleursA = () => (
   </div>
 );
 
+/* ─── Essais typographiques ──────────────────────────────── */
+
+export const SlideEssais = () => (
+  <div className="flex h-full flex-col justify-between p-10">
+    <H1>Explorations typographiques</H1>
+
+    <div className="flex flex-1 items-center gap-10">
+      <div className="flex-1">
+        <img src="/images/manrope.svg" alt="Logo Réso.NE en Manrope" className="w-full max-w-lg" />
+      </div>
+      <div className="flex max-w-md flex-1 flex-col gap-4">
+        <P>
+          Plusieurs croisements typographiques ont été testés, notamment avec la police Manrope.
+          Malgré ses qualités géométriques, l&apos;association manque de cohérence visuelle avec le
+          système de marque retenu.
+        </P>
+        <P>
+          Le contraste de styles crée une rupture de lecture qui affaiblit l&apos;identité au lieu
+          de la renforcer. La direction finale offre une meilleure unité entre le symbole et le
+          logotype.
+        </P>
+      </div>
+    </div>
+
+    <div />
+  </div>
+);
+
 /* ─── Exemples ──────────────────────────────────────────── */
 
 export const SlideExemple1 = () => (
@@ -1265,70 +1292,68 @@ export const SlideExemple3 = () => (
   </div>
 );
 
-/* ─── Retours & décisions ────────────────────────────────── */
-
-const RETOURS = [
-  {
-    num: 1,
-    title: 'Le naming',
-    text: 'Quelle variante vous parle le plus ? Nom de ville, descripteur par activité, ou nom local + ville ? Et comment voyez-vous la déclinaison au quotidien\u00a0\u2014 sur une façade, un formulaire, au téléphone ?',
-  },
-  {
-    num: 2,
-    title: 'La direction visuelle',
-    text: 'Cousinage ou Émancipation ? Le lien visuel avec le RHNe est-il un atout à maintenir ou un poids dont il faut s\u2019affranchir ?',
-  },
-  {
-    num: 3,
-    title: 'Les priorités',
-    text: 'Quels sont les premiers points de contact à traiter ? La signalétique des centres, le site web, la papeterie, les tenues ? L\u2019ordre dans lequel on déploie dépend de vos urgences opérationnelles.',
-  },
-];
-
-export const SlideRetours = () => (
-  <div className="flex h-full flex-col justify-between p-10">
-    <div>
-      <H1>On a besoin de vos retours sur trois points</H1>
-    </div>
-
-    <div className="grid grid-cols-3 gap-6">
-      {RETOURS.map(r => (
-        <Card key={r.num} padding="lg" className="flex flex-col gap-3">
-          <span className="text-accent font-mono text-2xl font-bold">{r.num}</span>
-          <span className="text-fg text-lg font-medium">{r.title}</span>
-          <p className="text-base leading-relaxed text-(--sub)">{r.text}</p>
-        </Card>
-      ))}
-    </div>
-
-    <div />
+export const SlideExemple4 = () => (
+  <div className="flex h-full items-center justify-center bg-gray-100 p-3">
+    <img
+      src="/images/4-papeterie.png"
+      alt="Exemple — Papeterie"
+      className="max-h-[97%] max-w-[97%] object-contain"
+    />
   </div>
 );
 
+export const SlideExemple5 = () => (
+  <div className="flex h-full items-center justify-center bg-gray-100 p-3">
+    <img
+      src="/images/5-carte-visite.png"
+      alt="Exemple — Carte de visite"
+      className="max-h-[97%] max-w-[97%] object-contain"
+    />
+  </div>
+);
+
+/* ─── Redesign site ──────────────────────────────────────── */
+
+export const SlideRedesign = () => (
+  <iframe
+    src="/images/reso_ne_redesign.html"
+    title="Maquette — Redesign site Réso.NE"
+    className="h-full w-full border-0"
+  />
+);
+
 /* ─── La suite ───────────────────────────────────────────── */
+
+const ETAPES = [
+  {
+    num: 1,
+    title: 'Validation du logo',
+    text: 'Retours et ajustements finaux sur le logo, le symbole et la typographie pour aboutir à une version définitive.',
+  },
+  {
+    num: 2,
+    title: 'Charte graphique',
+    text: 'Construction de la charte graphique complète\u00a0: couleurs, typographie, usages, règles de déclinaison sur tous les supports.',
+  },
+  {
+    num: 3,
+    title: 'Livraison & finalisation',
+    text: 'Envoi des packs logo dans tous les formats nécessaires et finalisation du projet.',
+  },
+];
 
 export const SlideUniversVisuel = () => (
   <div className="flex h-full flex-col justify-between p-10">
     <H1>La suite</H1>
 
-    <div className="flex max-w-[70%] flex-col gap-5">
-      <p className="text-lg leading-relaxed text-(--sub)">
-        Cette présentation couvre la stratégie de naming, l&apos;architecture de marque et deux
-        directions créatives pour le logo et la typographie. C&apos;est la fondation.
-      </p>
-      <p className="text-lg leading-relaxed text-(--sub)">
-        L&apos;étape suivante est l&apos;univers visuel&nbsp;: comment le logo, les couleurs et la
-        typographie se déclinent sur l&apos;ensemble des supports. Signalétique extérieure et
-        intérieure, site web, papeterie, cartes de visite, tenues du personnel, communication
-        patient. C&apos;est là que l&apos;identité prend corps, pas dans un PDF mais sur une façade,
-        un écran, un tampon.
-      </p>
-      <p className="text-lg leading-relaxed text-(--sub)">
-        Une fois la direction validée, on définit ensemble les points de contact prioritaires et on
-        produit des mockups réalistes. L&apos;objectif&nbsp;: qu&apos;on se rende compte ensemble de
-        ce que ça donne dans la vraie vie, avant de déployer quoi que ce soit. Ce volet fera
-        l&apos;objet d&apos;un mandat complémentaire à deviser.
-      </p>
+    <div className="grid grid-cols-3 gap-6">
+      {ETAPES.map(e => (
+        <Card key={e.num} padding="lg" className="flex flex-col gap-3">
+          <span className="text-accent font-mono text-2xl font-bold">{e.num}</span>
+          <span className="text-fg text-lg font-medium">{e.title}</span>
+          <p className="text-base leading-relaxed text-(--sub)">{e.text}</p>
+        </Card>
+      ))}
     </div>
 
     <div />
@@ -1338,14 +1363,31 @@ export const SlideUniversVisuel = () => (
 /* ─── Merci ──────────────────────────────────────────────── */
 
 export const SlideMerci = () => (
-  <div className="flex h-full flex-col items-center justify-center gap-10 p-10">
-    <h1 className="text-fg text-7xl font-bold tracking-tight">Merci.</h1>
+  <div className="flex h-full flex-col justify-between p-10">
+    <H1>Merci pour votre confiance.</H1>
 
-    <div className="flex flex-col items-center gap-2 text-lg text-(--sub)">
-      <span className="text-fg font-medium">Mirco Tamburini</span>
-      <span>mirco@costaud.ch</span>
-      <span>079 626 95 32</span>
-      <span>costaud.ch</span>
+    <div className="flex flex-col gap-6">
+      <P>
+        Je reste à votre entière disposition pour tout ajustement, question ou évolution du projet.
+        N&apos;hésitez pas à me contacter à tout moment.
+      </P>
+
+      <div className="grid grid-cols-3 gap-4">
+        <Card padding="lg" className="flex flex-col gap-1">
+          <Label>Nom</Label>
+          <span className="text-fg text-lg font-medium">Mirco Tamburini</span>
+        </Card>
+        <Card padding="lg" className="flex flex-col gap-1">
+          <Label>Email</Label>
+          <span className="text-fg text-lg font-medium">mirco@costaud.ch</span>
+        </Card>
+        <Card padding="lg" className="flex flex-col gap-1">
+          <Label>Téléphone</Label>
+          <span className="text-fg text-lg font-medium">079 626 95 32</span>
+        </Card>
+      </div>
     </div>
+
+    <div className="text-muted text-sm">costaud.ch</div>
   </div>
 );

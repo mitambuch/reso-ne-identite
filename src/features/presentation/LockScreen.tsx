@@ -8,8 +8,8 @@
 import { cn } from '@utils/cn';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
-const CODE = '201314';
-const CODE_LENGTH = 6;
+const CODE = '2013';
+const CODE_LENGTH = 4;
 
 // WHY: shake duration matches the CSS animation length so we can reset state after it ends
 const SHAKE_DURATION_MS = 500;

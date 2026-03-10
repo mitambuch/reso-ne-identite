@@ -26,9 +26,12 @@ import {
   SlideDeclinaisonsA,
   SlideDefi,
   SlideDemain,
+  SlideEssais,
   SlideExemple1,
   SlideExemple2,
   SlideExemple3,
+  SlideExemple4,
+  SlideExemple5,
   SlideExtensibilite,
   SlideLogoA,
   SlideMerci,
@@ -38,8 +41,8 @@ import {
   SlidePartiPrisA,
   SlidePositionnement,
   SlidePrincipes,
+  SlideRedesign,
   SlideResoNe,
-  SlideRetours,
   SlideStrategie,
   SlideTypoA,
   SlideUniversVisuel,
@@ -82,14 +85,17 @@ const SLIDE_COMPONENTS: FC[] = [
   SlideCohabitationA, // 20
   SlideTypoA, // 21
   SlideCouleursA, // 23
+  SlideEssais, // 24
   /* EXEMPLES */
-  SlideExemple1, // 24
-  SlideExemple2, // 25
-  SlideExemple3, // 26
+  SlideExemple1, // 25
+  SlideExemple2, // 26
+  SlideExemple3, // 27
+  SlideExemple4, // 28
+  SlideExemple5, // 29
+  SlideRedesign, // 30
   /* PROCHAINES ÉTAPES */
-  SlideRetours, // 27
-  SlideUniversVisuel, // 28
-  SlideMerci, // 29
+  SlideUniversVisuel, // 31
+  SlideMerci, // 32
 ];
 
 /* ═══════════════════════════════════════════════════════════════ */
