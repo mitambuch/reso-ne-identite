@@ -1045,7 +1045,7 @@ export const SlideConstructionA = () => (
     {/* Image centrée, grande */}
     <div className="flex flex-1 items-center justify-center">
       <img
-        src="/images/reso-ne-construction.svg"
+        src="/images/construction.svg"
         alt="Grille de construction du logo réso.ne"
         className="max-h-[65vh] max-w-[70vw] object-contain"
       />
@@ -1097,7 +1097,7 @@ export const SlideDeclinaisonsA = () => (
     {/* Gris clair — texte teal */}
     <div className="flex items-center justify-center bg-gray-100">
       <img
-        src="/images/Variante_1_teal.svg"
+        src="/images/variante1-teal.svg"
         alt="Logo sur fond gris — texte teal"
         className="max-h-[60%] max-w-[60%] object-contain"
       />
@@ -1230,6 +1230,38 @@ export const SlideCouleursA = () => (
     </div>
 
     <div />
+  </div>
+);
+
+/* ─── Exemples ──────────────────────────────────────────── */
+
+export const SlideExemple1 = () => (
+  <div className="h-full w-full">
+    <img
+      src="/images/1-panneau.png"
+      alt="Exemple — Panneau"
+      className="h-full w-full object-cover"
+    />
+  </div>
+);
+
+export const SlideExemple2 = () => (
+  <div className="h-full w-full">
+    <img
+      src="/images/2-enseigne.png"
+      alt="Exemple — Enseigne"
+      className="h-full w-full object-cover"
+    />
+  </div>
+);
+
+export const SlideExemple3 = () => (
+  <div className="h-full w-full">
+    <img
+      src="/images/3-vitrine.png"
+      alt="Exemple — Vitrine"
+      className="h-full w-full object-cover"
+    />
   </div>
 );
 

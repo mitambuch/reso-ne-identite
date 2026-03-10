@@ -51,10 +51,15 @@ export const SECTIONS: Section[] = [
   { title: 'La typographie', layout: 'default' }, // 22
   { title: 'Les couleurs', layout: 'default' }, // 23
 
+  /* ── EXEMPLES ─────────────────────────────────────────────── */
+  { title: 'Panneau', layout: 'default' }, // 24
+  { title: 'Enseigne', layout: 'default' }, // 25
+  { title: 'Vitrine', layout: 'default' }, // 26
+
   /* ── PROCHAINES ÉTAPES ──────────────────────────────────── */
-  { title: 'Retours & décisions', layout: 'default' }, // 24
-  { title: 'La suite', layout: 'default' }, // 25
-  { title: 'Merci', layout: 'default' }, // 26
+  { title: 'Retours & décisions', layout: 'default' }, // 27
+  { title: 'La suite', layout: 'default' }, // 28
+  { title: 'Merci', layout: 'default' }, // 29
 ];
 
 export const TOTAL_SLIDES = SECTIONS.length;
@@ -66,5 +71,6 @@ export const NAV_GROUPS: NavGroup[] = [
   { label: 'Naming & Architecture', items: [9, 10, 11, 12, 13] },
   { label: 'Stratégie visuelle', items: [14, 15, 16] },
   { label: 'Identité visuelle', items: [17, 18, 19, 20, 21, 22, 23] },
-  { label: 'Prochaines étapes', items: [24, 25, 26] },
+  { label: 'Exemples', items: [24, 25, 26] },
+  { label: 'Prochaines étapes', items: [27, 28, 29] },
 ];
