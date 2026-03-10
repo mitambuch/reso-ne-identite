@@ -29,6 +29,10 @@ const P = ({ children, className }: { children: ReactNode; className?: string })
   <div className={cn('max-w-2xl text-lg leading-[1.7] text-(--sub)', className)}>{children}</div>
 );
 
+const ResoLogo = ({ h = 'h-7' }: { h?: string }) => (
+  <img src="/images/Variante_3.svg" alt="réso.ne" className={`${h} inline-block align-baseline`} />
+);
+
 /* ─── 0. Couverture ─────────────────────────────────────────── */
 
 export const SlideCouverture = () => (
@@ -55,13 +59,8 @@ export const SlideCouverture = () => (
 
     {/* Bottom — identité + méta */}
     <div className="flex items-end justify-between">
-      <div className="flex flex-col gap-1">
-        <span
-          className="text-accent leading-none font-bold tracking-tight"
-          style={{ fontSize: 'clamp(2rem, 4vw, 3.2rem)' }}
-        >
-          réso.ne
-        </span>
+      <div className="flex flex-col items-start gap-1">
+        <img src="/images/Variante_3.svg" alt="réso.ne" className="h-10" />
         <span className="mt-1 text-base text-(--sub)">
           Réseau de soins ambulatoires de proximité — Canton de Neuchâtel
         </span>
@@ -654,12 +653,7 @@ export const SlideDemain = () => (
 
       {/* réso.ne — bloc principal dominant */}
       <div className="border-accent/40 bg-accent/10 w-full max-w-lg rounded-xl border-2 px-12 py-8 text-center">
-        <span
-          className="text-accent font-bold tracking-tight"
-          style={{ fontSize: 'clamp(2.5rem, 5vw, 3.5rem)' }}
-        >
-          réso.ne
-        </span>
+        <img src="/images/Variante_3.svg" alt="réso.ne" className="mx-auto h-12" />
         <p className="mt-2 text-lg text-(--sub)">Marque réseau</p>
       </div>
 
@@ -800,15 +794,18 @@ export const SlideDefi = () => (
 
 const NIVEAUX = [
   {
-    display: 'réso.ne',
+    logo: true,
+    logoH: 'h-10',
+    suffix: '',
     displayStyle: 'text-accent font-bold tracking-tight',
-    fontSize: 'clamp(2rem, 4vw, 3rem)',
     tag: 'Niveau 1',
     label: 'La marque réseau',
     text: 'Identifie le réseau. Présent partout. C\u2019est le lien entre tous les centres.',
   },
   {
-    display: 'Centre médical de [lieu]',
+    logo: false,
+    logoH: '',
+    suffix: 'Centre médical de [lieu]',
     displayStyle: 'text-fg font-medium tracking-tight',
     fontSize: 'clamp(1.4rem, 2.8vw, 2rem)',
     tag: 'Niveau 2',
@@ -816,7 +813,9 @@ const NIVEAUX = [
     text: 'Ce que le patient dit, ce qu\u2019il cherche sur Google, ce qu\u2019il lit en arrivant. C\u2019est le nom du quotidien.',
   },
   {
-    display: 'réso.ne — Centre médical de [lieu]',
+    logo: true,
+    logoH: 'h-7',
+    suffix: ' — Centre médical de [lieu]',
     displayStyle: 'text-fg font-medium tracking-tight',
     fontSize: 'clamp(1.2rem, 2.4vw, 1.7rem)',
     tag: 'Niveau 3',
@@ -839,8 +838,12 @@ export const SlideNomenclature = () => (
               i === 0 && 'border-accent/30 bg-accent/5',
             )}
           >
-            <span className={n.displayStyle} style={{ fontSize: n.fontSize }}>
-              {n.display}
+            <span
+              className={n.displayStyle}
+              style={{ fontSize: 'fontSize' in n ? n.fontSize : undefined }}
+            >
+              {n.logo && <ResoLogo h={n.logoH} />}
+              {n.suffix}
             </span>
           </div>
 
@@ -1066,38 +1069,80 @@ export const SlideConstructionA = () => (
 
 export const SlideDeclinaisonsA = () => (
   <div className="grid h-full grid-cols-2 grid-rows-2">
-    {/* Blanc */}
+    {/* Haut gauche — Variante 3 sur blanc */}
     <div className="flex items-center justify-center bg-white">
       <img
-        src="/images/Variante_1.svg"
-        alt="Logo sur fond blanc"
+        src="/images/Variante_3.svg"
+        alt="Logo variante couleur"
         className="max-h-[60%] max-w-[60%] object-contain"
       />
     </div>
 
-    {/* Noir */}
-    <div className="flex items-center justify-center bg-black">
+    {/* Haut droite — Blanc sur anthracite */}
+    <div className="flex items-center justify-center" style={{ backgroundColor: '#2D2D2D' }}>
       <img
-        src="/images/Variante_1.svg"
-        alt="Logo sur fond noir"
-        className="max-h-[60%] max-w-[60%] object-contain brightness-0 invert"
+        src="/images/Variante_white.svg"
+        alt="Logo blanc sur fond sombre"
+        className="max-h-[60%] max-w-[60%] object-contain"
       />
     </div>
 
-    {/* Teal RHNe */}
-    <div className="flex items-center justify-center" style={{ backgroundColor: 'var(--teal)' }}>
+    {/* Bas gauche — Blanc sur teal Réso.ne */}
+    <div className="flex items-center justify-center" style={{ backgroundColor: '#59BFBD' }}>
       <img
-        src="/images/Variante_1.svg"
-        alt="Logo sur fond teal"
-        className="max-h-[60%] max-w-[60%] object-contain brightness-0 invert"
+        src="/images/Variante_white.svg"
+        alt="Logo blanc sur fond teal"
+        className="max-h-[60%] max-w-[60%] object-contain"
       />
     </div>
 
-    {/* Gris clair — texte teal */}
-    <div className="flex items-center justify-center bg-gray-100">
+    {/* Bas droite — Noir sur blanc teal */}
+    <div className="flex items-center justify-center" style={{ backgroundColor: '#F5FAFA' }}>
       <img
-        src="/images/variante1-teal.svg"
-        alt="Logo sur fond gris — texte teal"
+        src="/images/Variante_black.svg"
+        alt="Logo noir sur fond clair"
+        className="max-h-[60%] max-w-[60%] object-contain"
+      />
+    </div>
+  </div>
+);
+
+/* ─── Déclinaisons compact ───────────────────────────────── */
+
+export const SlideDeclinaisonsCompact = () => (
+  <div className="grid h-full grid-cols-2 grid-rows-2">
+    {/* Haut gauche — Compact couleur sur blanc */}
+    <div className="flex items-center justify-center bg-white">
+      <img
+        src="/images/Variante_compact.svg"
+        alt="Logo compact couleur"
+        className="max-h-[60%] max-w-[60%] object-contain"
+      />
+    </div>
+
+    {/* Haut droite — Compact blanc sur anthracite */}
+    <div className="flex items-center justify-center" style={{ backgroundColor: '#2D2D2D' }}>
+      <img
+        src="/images/Variante_compact_white.svg"
+        alt="Logo compact blanc sur fond sombre"
+        className="max-h-[60%] max-w-[60%] object-contain"
+      />
+    </div>
+
+    {/* Bas gauche — Compact blanc sur teal Réso.ne */}
+    <div className="flex items-center justify-center" style={{ backgroundColor: '#59BFBD' }}>
+      <img
+        src="/images/Variante_compact_white.svg"
+        alt="Logo compact blanc sur fond teal"
+        className="max-h-[60%] max-w-[60%] object-contain"
+      />
+    </div>
+
+    {/* Bas droite — Compact noir sur blanc teal */}
+    <div className="flex items-center justify-center" style={{ backgroundColor: '#F5FAFA' }}>
+      <img
+        src="/images/Variante_compact_black.svg"
+        alt="Logo compact noir sur fond clair"
         className="max-h-[60%] max-w-[60%] object-contain"
       />
     </div>
@@ -1184,79 +1229,270 @@ export const SlideTypoA = () => (
   </div>
 );
 
-/* ─── Variante 1 — Les couleurs ──────────────────────────── */
+/* ─── Les couleurs ───────────────────────────────────────── */
 
-const COULEURS_A = [
-  { name: 'Teal RHNe', hex: '#009B8D', text: 'white' as const },
-  { name: 'Teal clair', hex: '#7CC5BF', text: 'white' as const },
-  { name: 'Blanc', hex: '#FFFFFF', text: 'black' as const },
-  { name: 'Anthracite', hex: '#2D2D2D', text: 'white' as const },
+interface ColorDef {
+  name: string;
+  hex: string;
+  text: 'white' | 'black';
+  desc: string;
+}
+
+interface GradientDef {
+  name: string;
+  from: string;
+  to: string;
+  desc: string;
+}
+
+const COULEURS_RHNE: ColorDef[] = [
+  {
+    name: 'Teal RHNe',
+    hex: '#009B8D',
+    text: 'white',
+    desc: 'Couleur principale du RHNe. Utilisée pour le symbole du logo et les accents forts.',
+  },
+  {
+    name: 'Teal clair RHNe',
+    hex: '#99D9D9',
+    text: 'black',
+    desc: 'Couleur secondaire du RHNe. Présente dans l\u2019identité hospitalière.',
+  },
 ];
 
-const COULEURS_A_DESC: Record<string, string> = {
-  'Teal RHNe':
-    'Couleur principale. Le lien direct avec le RHNe. Utilisée pour le symbole et les accents.',
-  'Teal clair':
-    'Couleur secondaire. Utilisée pour le texte "réso.ne" dans le logo et les éléments d\u2019accompagnement.',
-  Blanc: 'Fond principal. Propreté, clarté, espace.',
-  Anthracite: 'Texte courant. Lisibilité maximale sans la dureté du noir pur.',
-};
+const COULEURS_RESONE: ColorDef[] = [
+  {
+    name: 'Teal Réso.ne',
+    hex: '#59BFBD',
+    text: 'white',
+    desc: 'Couleur principale du logo Réso.ne. À mi-chemin entre le teal RHNe et le teal clair. C\u2019est la couleur identitaire.',
+  },
+  {
+    name: 'Teal doux',
+    hex: '#7CC5BF',
+    text: 'white',
+    desc: 'Couleur d\u2019accompagnement. Éléments secondaires, fonds légers, hovers.',
+  },
+  {
+    name: 'Teal sombre',
+    hex: '#2D6B6A',
+    text: 'white',
+    desc: 'Remplace le noir dans le logo. Texte du wordmark "réso.ne". Profond mais dans la famille teal.',
+  },
+];
+
+const COULEURS_NEUTRES: ColorDef[] = [
+  {
+    name: 'Blanc teal',
+    hex: '#F5FAFA',
+    text: 'black',
+    desc: 'Fond principal écran. Blanc légèrement teinté vert pour la cohérence.',
+  },
+  {
+    name: 'Blanc pur',
+    hex: '#FFFFFF',
+    text: 'black',
+    desc: 'Réservé au print et aux zones de contraste maximal.',
+  },
+  {
+    name: 'Anthracite',
+    hex: '#2D2D2D',
+    text: 'white',
+    desc: 'Texte courant. Lisibilité maximale sans la dureté du noir pur.',
+  },
+];
+
+const COULEURS_SECONDAIRES: ColorDef[] = [
+  {
+    name: 'Teal nuit (CTA)',
+    hex: '#1A5C5A',
+    text: 'white',
+    desc: 'Boutons et appels à l\u2019action. Suffisamment sombre pour trancher, toujours dans la famille teal.',
+  },
+  {
+    name: 'Fond section',
+    hex: '#EDF5F4',
+    text: 'black',
+    desc: 'Fonds de sections alternées. Doux, aéré.',
+  },
+  { name: 'Bordures', hex: '#C4DEDD', text: 'black', desc: 'Séparations et contours de cartes.' },
+  {
+    name: 'Texte secondaire',
+    hex: '#4A6B6A',
+    text: 'white',
+    desc: 'Paragraphes secondaires, descriptions.',
+  },
+  {
+    name: 'Texte tertiaire',
+    hex: '#7A9B9A',
+    text: 'white',
+    desc: 'Labels, métadonnées, informations de moindre importance.',
+  },
+  {
+    name: 'Urgences',
+    hex: '#D94040',
+    text: 'white',
+    desc: 'Bouton urgences et alertes. Seule couleur hors famille teal.',
+  },
+];
+
+const GRADIENTS: GradientDef[] = [
+  {
+    name: 'Gradient principal',
+    from: '#009B8D',
+    to: '#59BFBD',
+    desc: 'Fonds de hero, bannières, éléments de communication.',
+  },
+  {
+    name: 'Gradient doux',
+    from: '#59BFBD',
+    to: '#7CC5BF',
+    desc: 'Fonds de cartes, éléments subtils.',
+  },
+  { name: 'Gradient sombre', from: '#2D6B6A', to: '#009B8D', desc: 'Footer, éléments dark mode.' },
+];
+
+const ColorSwatchLg = ({ c }: { c: ColorDef }) => (
+  <div className="flex items-start gap-3">
+    <div
+      className="flex h-14 w-32 shrink-0 items-end rounded-lg border border-gray-200 px-2 py-1.5"
+      style={{ backgroundColor: c.hex }}
+    >
+      <span
+        className="font-mono text-[9px] leading-none font-medium"
+        style={{ color: c.text === 'white' ? '#fff' : '#000' }}
+      >
+        {c.hex}
+      </span>
+    </div>
+    <div className="min-w-0">
+      <span className="text-fg text-sm font-semibold">{c.name}</span>
+      <p className="text-xs leading-snug text-(--sub)">{c.desc}</p>
+    </div>
+  </div>
+);
+
+const ColorSwatchSm = ({ c }: { c: ColorDef }) => (
+  <div className="flex items-center gap-3">
+    <div
+      className="flex h-10 w-28 shrink-0 items-end rounded-lg border border-gray-200 px-2 py-1"
+      style={{ backgroundColor: c.hex }}
+    >
+      <span
+        className="font-mono text-[10px] leading-none font-medium"
+        style={{ color: c.text === 'white' ? '#fff' : '#000' }}
+      >
+        {c.hex}
+      </span>
+    </div>
+    <div className="min-w-0">
+      <span className="text-fg text-sm font-semibold">{c.name}</span>
+      <span className="ml-1.5 text-xs text-(--sub)">{c.desc}</span>
+    </div>
+  </div>
+);
+
+const ColorSection = ({
+  title,
+  subtitle,
+  children,
+}: {
+  title: ReactNode;
+  subtitle?: string;
+  children: ReactNode;
+}) => (
+  <div className="flex flex-col gap-2">
+    <div>
+      <span className="text-fg text-sm font-semibold">{title}</span>
+      {subtitle && <span className="text-muted ml-2 text-xs">{subtitle}</span>}
+    </div>
+    {children}
+  </div>
+);
 
 export const SlideCouleursA = () => (
-  <div className="flex h-full flex-col justify-between p-10">
+  <div className="flex h-full flex-col gap-4 p-8">
     <H1>Les couleurs</H1>
 
-    <div className="grid grid-cols-4 gap-4">
-      {COULEURS_A.map(c => (
-        <div key={c.name} className="flex flex-col">
-          <div
-            className="flex aspect-4/3 items-end rounded-lg border border-gray-200 p-4"
-            style={{ backgroundColor: c.hex }}
-          >
-            <span
-              className="text-sm font-medium"
-              style={{ color: c.text === 'white' ? '#fff' : '#000' }}
-            >
-              {c.hex}
-            </span>
-          </div>
-          <div className="mt-3 flex flex-col gap-1">
-            <span className="text-fg text-sm font-semibold">{c.name}</span>
-            <span className="text-sm leading-snug text-(--sub)">{COULEURS_A_DESC[c.name]}</span>
-          </div>
+    {/* Réso.ne & RHNe — large swatches */}
+    <div className="grid grid-cols-2 gap-x-10 gap-y-4">
+      <ColorSection title="Couleurs Réso.ne" subtitle="Identité du réseau ambulatoire">
+        <div className="flex flex-col gap-3">
+          {COULEURS_RESONE.map(c => (
+            <ColorSwatchLg key={c.hex} c={c} />
+          ))}
         </div>
-      ))}
+      </ColorSection>
+
+      <ColorSection title="Couleurs RHNe" subtitle="Héritées du RHNe">
+        <div className="flex flex-col gap-3">
+          {COULEURS_RHNE.map(c => (
+            <ColorSwatchLg key={c.hex} c={c} />
+          ))}
+        </div>
+      </ColorSection>
     </div>
 
-    <div />
+    {/* Neutres & Secondaires — compact horizontal */}
+    <div className="grid grid-cols-2 gap-x-10 gap-y-2">
+      <ColorSection title="Couleurs neutres">
+        <div className="flex flex-col gap-1">
+          {COULEURS_NEUTRES.map(c => (
+            <ColorSwatchSm key={c.hex} c={c} />
+          ))}
+        </div>
+      </ColorSection>
+
+      <ColorSection title="Couleurs secondaires">
+        <div className="flex flex-col gap-1">
+          {COULEURS_SECONDAIRES.map(c => (
+            <ColorSwatchSm key={c.hex} c={c} />
+          ))}
+        </div>
+      </ColorSection>
+    </div>
+
+    {/* Gradients */}
+    <ColorSection title="Gradients">
+      <div className="grid grid-cols-3 gap-4">
+        {GRADIENTS.map(g => (
+          <div key={g.name} className="flex flex-col gap-0.5">
+            <div
+              className="h-7 w-full rounded-lg"
+              style={{ background: `linear-gradient(to right, ${g.from}, ${g.to})` }}
+            />
+            <span className="text-fg text-[11px] font-semibold">{g.name}</span>
+            <span className="text-[10px] text-(--sub)">{g.desc}</span>
+          </div>
+        ))}
+      </div>
+    </ColorSection>
   </div>
 );
 
 /* ─── Essais typographiques ──────────────────────────────── */
 
+const VARIANTES_COULEUR = [
+  '/images/variante_couleur_1.svg',
+  '/images/variante_couleur_2.svg',
+  '/images/variante_couleur_3.svg',
+  '/images/variante_couleur_4.svg',
+];
+
 export const SlideEssais = () => (
-  <div className="flex h-full flex-col justify-between p-10">
-    <H1>Explorations typographiques</H1>
-
-    <div className="flex flex-1 items-center gap-10">
-      <div className="flex-1">
-        <img src="/images/manrope.svg" alt="Logo Réso.NE en Manrope" className="w-full max-w-lg" />
+  <div className="grid h-full grid-cols-2 grid-rows-2" style={{ backgroundColor: '#F5FAFA' }}>
+    {VARIANTES_COULEUR.map((src, i) => (
+      <div key={src} className="relative flex items-center justify-center">
+        <span className="bg-accent absolute top-4 left-4 flex h-7 w-7 items-center justify-center rounded-full text-xs font-bold text-white">
+          {i + 1}
+        </span>
+        <img
+          src={src}
+          alt={`Variante couleur ${i + 1}`}
+          className="max-h-[60%] max-w-[60%] object-contain"
+        />
       </div>
-      <div className="flex max-w-md flex-1 flex-col gap-4">
-        <P>
-          Plusieurs croisements typographiques ont été testés, notamment avec la police Manrope.
-          Malgré ses qualités géométriques, l&apos;association manque de cohérence visuelle avec le
-          système de marque retenu.
-        </P>
-        <P>
-          Le contraste de styles crée une rupture de lecture qui affaiblit l&apos;identité au lieu
-          de la renforcer. La direction finale offre une meilleure unité entre le symbole et le
-          logotype.
-        </P>
-      </div>
-    </div>
-
-    <div />
+    ))}
   </div>
 );
 
