@@ -1532,6 +1532,16 @@ export const SlideExemple1 = () => (
   </div>
 );
 
+export const SlideExemple1v2 = () => (
+  <div className="h-full w-full">
+    <img
+      src="/images/1-panneau-v2.png"
+      alt="Exemple — Panneau v2"
+      className="h-full w-full object-cover"
+    />
+  </div>
+);
+
 export const SlideExemple2 = () => (
   <div className="h-full w-full">
     <img
@@ -1552,6 +1562,16 @@ export const SlideExemple3 = () => (
   </div>
 );
 
+export const SlideExemple3v2 = () => (
+  <div className="h-full w-full">
+    <img
+      src="/images/3-vitrine-v2.png"
+      alt="Exemple — Vitrine v2"
+      className="h-full w-full object-cover"
+    />
+  </div>
+);
+
 export const SlideExemple4 = () => (
   <div className="flex h-full items-center justify-center bg-gray-100 p-3">
     <img
@@ -1562,11 +1582,31 @@ export const SlideExemple4 = () => (
   </div>
 );
 
+export const SlideExemple4v2 = () => (
+  <div className="flex h-full items-center justify-center bg-gray-100 p-3">
+    <img
+      src="/images/4-papeterie-v2.png"
+      alt="Exemple — Papeterie v2"
+      className="max-h-[97%] max-w-[97%] object-contain"
+    />
+  </div>
+);
+
 export const SlideExemple5 = () => (
   <div className="flex h-full items-center justify-center bg-gray-100 p-3">
     <img
       src="/images/5-carte-visite.png"
       alt="Exemple — Carte de visite"
+      className="max-h-[97%] max-w-[97%] object-contain"
+    />
+  </div>
+);
+
+export const SlideExemple5v2 = () => (
+  <div className="flex h-full items-center justify-center bg-gray-100 p-3">
+    <img
+      src="/images/5-carte-visite-v2.png"
+      alt="Exemple — Carte de visite v2"
       className="max-h-[97%] max-w-[97%] object-contain"
     />
   </div>
