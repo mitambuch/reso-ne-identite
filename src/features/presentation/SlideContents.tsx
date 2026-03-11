@@ -1038,6 +1038,18 @@ export const SlideLogoA = () => (
   </div>
 );
 
+/* ─── Variante 1 — Le logo (opti) ───────────────────────── */
+
+export const SlideLogoOpti = () => (
+  <div className="flex h-full items-center justify-center p-10">
+    <img
+      src="/images/variante_couleur-opti.svg"
+      alt="réso.ne — Logo optimisé"
+      className="max-h-[45vh] max-w-[45vw] object-contain"
+    />
+  </div>
+);
+
 /* ─── Variante 1 — Construction du logo ─────────────────── */
 
 export const SlideConstructionA = () => (
@@ -1054,6 +1066,31 @@ export const SlideConstructionA = () => (
     </div>
 
     {/* Texte en bas */}
+    <div className="max-w-3xl">
+      <p className="text-base leading-relaxed text-(--sub)">
+        Le logo est construit sur une grille stricte, en réutilisant les proportions de la
+        typographie Proxima Nova. Les éléments intérieurs suivent une logique en tiers&nbsp;: le
+        point plein sur le tiers gauche, l&apos;intersection des lignes sur le tiers droit, et le
+        point du réseau &mdash; celui du .ne &mdash; centré dans le troisième tiers du carré.
+      </p>
+    </div>
+  </div>
+);
+
+/* ─── Variante 1 — Construction du logo (opti) ─────────── */
+
+export const SlideConstructionOpti = () => (
+  <div className="flex h-full flex-col p-10">
+    <H1>Construction</H1>
+
+    <div className="flex flex-1 items-center justify-center">
+      <img
+        src="/images/construction-opti.svg"
+        alt="Grille de construction du logo réso.ne — optimisé"
+        className="max-h-[65vh] max-w-[70vw] object-contain"
+      />
+    </div>
+
     <div className="max-w-3xl">
       <p className="text-base leading-relaxed text-(--sub)">
         Le logo est construit sur une grille stricte, en réutilisant les proportions de la
@@ -1156,6 +1193,18 @@ export const SlideCohabitationA = () => (
     <img
       src="/images/cohabitation.svg"
       alt="Cohabitation réso.ne et RHNe"
+      className="max-h-[45vh] max-w-[55vw] object-contain"
+    />
+  </div>
+);
+
+/* ─── Variante 1 — Cohabitation RHNe (opti) ─────────────── */
+
+export const SlideCohabitationOpti = () => (
+  <div className="flex h-full items-center justify-center p-10">
+    <img
+      src="/images/cohabitation-opti.svg"
+      alt="Cohabitation réso.ne et RHNe — optimisé"
       className="max-h-[45vh] max-w-[55vw] object-contain"
     />
   </div>
@@ -1552,6 +1601,16 @@ export const SlideExemple2 = () => (
   </div>
 );
 
+export const SlideExemple2v2 = () => (
+  <div className="h-full w-full">
+    <img
+      src="/images/2-enseigne-v2.png"
+      alt="Exemple — Enseigne v2"
+      className="h-full w-full object-cover"
+    />
+  </div>
+);
+
 export const SlideExemple3 = () => (
   <div className="h-full w-full">
     <img
@@ -1607,6 +1666,58 @@ export const SlideExemple5v2 = () => (
     <img
       src="/images/5-carte-visite-v2.png"
       alt="Exemple — Carte de visite v2"
+      className="max-h-[97%] max-w-[97%] object-contain"
+    />
+  </div>
+);
+
+/* ─── Exemples v3 (opti) ─────────────────────────────────── */
+
+export const SlideExemple1v3 = () => (
+  <div className="h-full w-full">
+    <img
+      src="/images/1-panneau-v3.png"
+      alt="Exemple — Panneau v3"
+      className="h-full w-full object-cover"
+    />
+  </div>
+);
+
+export const SlideExemple2v3 = () => (
+  <div className="h-full w-full">
+    <img
+      src="/images/2-enseigne-v3.png"
+      alt="Exemple — Enseigne v3"
+      className="h-full w-full object-cover"
+    />
+  </div>
+);
+
+export const SlideExemple3v3 = () => (
+  <div className="h-full w-full">
+    <img
+      src="/images/3-vitrine-v3.png"
+      alt="Exemple — Vitrine v3"
+      className="h-full w-full object-cover"
+    />
+  </div>
+);
+
+export const SlideExemple4v3 = () => (
+  <div className="flex h-full items-center justify-center bg-gray-100 p-3">
+    <img
+      src="/images/4-papeterie-v3.png"
+      alt="Exemple — Papeterie v3"
+      className="max-h-[97%] max-w-[97%] object-contain"
+    />
+  </div>
+);
+
+export const SlideExemple5v3 = () => (
+  <div className="flex h-full items-center justify-center bg-gray-100 p-3">
+    <img
+      src="/images/5-carte-visite-v3.png"
+      alt="Exemple — Carte de visite v3"
       className="max-h-[97%] max-w-[97%] object-contain"
     />
   </div>

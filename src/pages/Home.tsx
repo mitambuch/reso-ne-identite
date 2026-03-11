@@ -20,7 +20,9 @@ import {
   SlideBenchmark,
   SlideChiffres,
   SlideCohabitationA,
+  SlideCohabitationOpti,
   SlideConstructionA,
+  SlideConstructionOpti,
   SlideCouleursA,
   SlideCouverture,
   SlideDeclinaisonsA,
@@ -31,15 +33,22 @@ import {
   SlideEssais2,
   SlideExemple1,
   SlideExemple1v2,
+  SlideExemple1v3,
   SlideExemple2,
+  SlideExemple2v2,
+  SlideExemple2v3,
   SlideExemple3,
   SlideExemple3v2,
+  SlideExemple3v3,
   SlideExemple4,
   SlideExemple4v2,
+  SlideExemple4v3,
   SlideExemple5,
   SlideExemple5v2,
+  SlideExemple5v3,
   SlideExtensibilite,
   SlideLogoA,
+  SlideLogoOpti,
   SlideMerci,
   SlideMission,
   SlideNomenclature,
@@ -86,28 +95,37 @@ const SLIDE_COMPONENTS: FC[] = [
   /* IDENTITÉ VISUELLE — Détails */
   SlidePartiPrisA, // 17
   SlideLogoA, // 18
-  SlideConstructionA, // 19
-  SlideDeclinaisonsA, // 20
-  SlideDeclinaisonsCompact, // 21
-  SlideCohabitationA, // 22
-  SlideTypoA, // 23
-  SlideCouleursA, // 24
-  SlideEssais, // 25
-  SlideEssais2, // 26
+  SlideLogoOpti, // 19
+  SlideConstructionA, // 20
+  SlideConstructionOpti, // 21
+  SlideDeclinaisonsA, // 22
+  SlideDeclinaisonsCompact, // 23
+  SlideCohabitationA, // 24
+  SlideCohabitationOpti, // 25
+  SlideTypoA, // 26
+  SlideCouleursA, // 27
+  SlideEssais, // 28
+  SlideEssais2, // 29
   /* EXEMPLES */
-  SlideExemple1, // 27
-  SlideExemple1v2, // 28
-  SlideExemple2, // 29
-  SlideExemple3, // 30
-  SlideExemple3v2, // 31
-  SlideExemple4, // 32
-  SlideExemple4v2, // 33
-  SlideExemple5, // 34
-  SlideExemple5v2, // 35
-  SlideRedesign, // 36
+  SlideExemple1, // 30
+  SlideExemple1v2, // 31
+  SlideExemple1v3, // 32
+  SlideExemple2, // 33
+  SlideExemple2v2, // 34
+  SlideExemple2v3, // 35
+  SlideExemple3, // 36
+  SlideExemple3v2, // 37
+  SlideExemple3v3, // 38
+  SlideExemple4, // 39
+  SlideExemple4v2, // 40
+  SlideExemple4v3, // 41
+  SlideExemple5, // 42
+  SlideExemple5v2, // 43
+  SlideExemple5v3, // 44
+  SlideRedesign, // 45
   /* PROCHAINES ÉTAPES */
-  SlideUniversVisuel, // 37
-  SlideMerci, // 38
+  SlideUniversVisuel, // 46
+  SlideMerci, // 47
 ];
 
 /* ═══════════════════════════════════════════════════════════════ */
