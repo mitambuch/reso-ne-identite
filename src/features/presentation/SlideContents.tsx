@@ -1496,6 +1496,30 @@ export const SlideEssais = () => (
   </div>
 );
 
+const VARIANTES_COULEUR_2 = [
+  '/images/variante_couleur_5.svg',
+  '/images/variante_couleur_6.svg',
+  '/images/variante_couleur_7.svg',
+  '/images/variante_couleur_8.svg',
+];
+
+export const SlideEssais2 = () => (
+  <div className="grid h-full grid-cols-2 grid-rows-2" style={{ backgroundColor: '#F5FAFA' }}>
+    {VARIANTES_COULEUR_2.map((src, i) => (
+      <div key={src} className="relative flex items-center justify-center">
+        <span className="bg-accent absolute top-4 left-4 flex h-7 w-7 items-center justify-center rounded-full text-xs font-bold text-white">
+          {i + 5}
+        </span>
+        <img
+          src={src}
+          alt={`Variante couleur ${i + 5}`}
+          className="max-h-[60%] max-w-[60%] object-contain"
+        />
+      </div>
+    ))}
+  </div>
+);
+
 /* ─── Exemples ──────────────────────────────────────────── */
 
 export const SlideExemple1 = () => (

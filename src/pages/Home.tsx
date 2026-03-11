@@ -28,6 +28,7 @@ import {
   SlideDefi,
   SlideDemain,
   SlideEssais,
+  SlideEssais2,
   SlideExemple1,
   SlideExemple2,
   SlideExemple3,
@@ -88,16 +89,17 @@ const SLIDE_COMPONENTS: FC[] = [
   SlideTypoA, // 23
   SlideCouleursA, // 24
   SlideEssais, // 25
+  SlideEssais2, // 26
   /* EXEMPLES */
-  SlideExemple1, // 26
-  SlideExemple2, // 27
-  SlideExemple3, // 28
-  SlideExemple4, // 29
-  SlideExemple5, // 30
-  SlideRedesign, // 31
+  SlideExemple1, // 27
+  SlideExemple2, // 28
+  SlideExemple3, // 29
+  SlideExemple4, // 30
+  SlideExemple5, // 31
+  SlideRedesign, // 32
   /* PROCHAINES ÉTAPES */
-  SlideUniversVisuel, // 32
-  SlideMerci, // 33
+  SlideUniversVisuel, // 33
+  SlideMerci, // 34
 ];
 
 /* ═══════════════════════════════════════════════════════════════ */
