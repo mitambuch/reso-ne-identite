@@ -87,11 +87,6 @@ export const NavPanel = ({ current, onGo, className }: NavPanelProps) => {
                       <span className="bg-accent absolute top-1.5 bottom-1.5 left-0 w-0.5 rounded-full" />
                     )}
                     {section.title}
-                    {section.opti && (
-                      <span className="ml-1 inline-flex items-center gap-0.5 rounded-full bg-emerald-100 px-1.5 py-px text-[9px] font-semibold text-emerald-700">
-                        <span className="text-[8px]">{'\u{1F44D}'}</span>opti
-                      </span>
-                    )}
                   </button>
                 );
               })}

@@ -39,7 +39,7 @@ export const SlideCouverture = () => (
   <div className="relative flex h-full flex-col justify-between p-10">
     {/* Top — surtitre + sous-titre */}
     <div className="flex flex-col gap-1">
-      <Label>Brief créatif — 2026</Label>
+      <Label>Identité visuelle — 2026</Label>
       <span className="text-lg tracking-tight text-(--sub)">
         Stratégie &amp; identité de marque
       </span>
@@ -1015,30 +1015,7 @@ export const SlidePartiPrisA = () => (
   </div>
 );
 
-/* ─── Variante 1 — Le logo ───────────────────────────────── */
-
-export const SlideLogoA = () => (
-  <div className="flex h-full items-center justify-center p-10">
-    <img
-      src="/images/Variante_1.svg"
-      alt="réso.ne — Variante Cousinage"
-      className="animate-logo-reveal max-h-[45vh] max-w-[45vw] object-contain"
-    />
-
-    <style>{`
-      @keyframes logo-reveal {
-        0%   { opacity: 0; filter: blur(12px); transform: scale(0.92); }
-        60%  { opacity: 1; filter: blur(0);    transform: scale(1.01); }
-        100% { opacity: 1; filter: blur(0);    transform: scale(1);   }
-      }
-      .animate-logo-reveal {
-        animation: logo-reveal 5s cubic-bezier(0.16, 1, 0.3, 1) both;
-      }
-    `}</style>
-  </div>
-);
-
-/* ─── Variante 1 — Le logo (opti) ───────────────────────── */
+/* ─── Le logo ────────────────────────────────────────────── */
 
 export const SlideLogoOpti = () => (
   <div className="flex h-full items-center justify-center p-10">
@@ -1050,34 +1027,7 @@ export const SlideLogoOpti = () => (
   </div>
 );
 
-/* ─── Variante 1 — Construction du logo ─────────────────── */
-
-export const SlideConstructionA = () => (
-  <div className="flex h-full flex-col p-10">
-    <H1>Construction</H1>
-
-    {/* Image centrée, grande */}
-    <div className="flex flex-1 items-center justify-center">
-      <img
-        src="/images/construction.svg"
-        alt="Grille de construction du logo réso.ne"
-        className="max-h-[65vh] max-w-[70vw] object-contain"
-      />
-    </div>
-
-    {/* Texte en bas */}
-    <div className="max-w-3xl">
-      <p className="text-base leading-relaxed text-(--sub)">
-        Le logo est construit sur une grille stricte, en réutilisant les proportions de la
-        typographie Proxima Nova. Les éléments intérieurs suivent une logique en tiers&nbsp;: le
-        point plein sur le tiers gauche, l&apos;intersection des lignes sur le tiers droit, et le
-        point du réseau &mdash; celui du .ne &mdash; centré dans le troisième tiers du carré.
-      </p>
-    </div>
-  </div>
-);
-
-/* ─── Variante 1 — Construction du logo (opti) ─────────── */
+/* ─── Construction du logo ───────────────────────────────── */
 
 export const SlideConstructionOpti = () => (
   <div className="flex h-full flex-col p-10">
@@ -1186,19 +1136,7 @@ export const SlideDeclinaisonsCompact = () => (
   </div>
 );
 
-/* ─── Variante 1 — Cohabitation RHNe ─────────────────────── */
-
-export const SlideCohabitationA = () => (
-  <div className="flex h-full items-center justify-center p-10">
-    <img
-      src="/images/cohabitation.svg"
-      alt="Cohabitation réso.ne et RHNe"
-      className="max-h-[45vh] max-w-[55vw] object-contain"
-    />
-  </div>
-);
-
-/* ─── Variante 1 — Cohabitation RHNe (opti) ─────────────── */
+/* ─── Cohabitation RHNe ──────────────────────────────────── */
 
 export const SlideCohabitationOpti = () => (
   <div className="flex h-full items-center justify-center p-10">
@@ -1519,159 +1457,7 @@ export const SlideCouleursA = () => (
   </div>
 );
 
-/* ─── Essais typographiques ──────────────────────────────── */
-
-const VARIANTES_COULEUR = [
-  '/images/variante_couleur_1.svg',
-  '/images/variante_couleur_2.svg',
-  '/images/variante_couleur_3.svg',
-  '/images/variante_couleur_4.svg',
-];
-
-export const SlideEssais = () => (
-  <div className="grid h-full grid-cols-2 grid-rows-2" style={{ backgroundColor: '#F5FAFA' }}>
-    {VARIANTES_COULEUR.map((src, i) => (
-      <div key={src} className="relative flex items-center justify-center">
-        <span className="bg-accent absolute top-4 left-4 flex h-7 w-7 items-center justify-center rounded-full text-xs font-bold text-white">
-          {i + 1}
-        </span>
-        <img
-          src={src}
-          alt={`Variante couleur ${i + 1}`}
-          className="max-h-[60%] max-w-[60%] object-contain"
-        />
-      </div>
-    ))}
-  </div>
-);
-
-const VARIANTES_COULEUR_2 = [
-  '/images/variante_couleur_5.svg',
-  '/images/variante_couleur_6.svg',
-  '/images/variante_couleur_7.svg',
-  '/images/variante_couleur_8.svg',
-];
-
-export const SlideEssais2 = () => (
-  <div className="grid h-full grid-cols-2 grid-rows-2" style={{ backgroundColor: '#F5FAFA' }}>
-    {VARIANTES_COULEUR_2.map((src, i) => (
-      <div key={src} className="relative flex items-center justify-center">
-        <span className="bg-accent absolute top-4 left-4 flex h-7 w-7 items-center justify-center rounded-full text-xs font-bold text-white">
-          {i + 5}
-        </span>
-        <img
-          src={src}
-          alt={`Variante couleur ${i + 5}`}
-          className="max-h-[60%] max-w-[60%] object-contain"
-        />
-      </div>
-    ))}
-  </div>
-);
-
 /* ─── Exemples ──────────────────────────────────────────── */
-
-export const SlideExemple1 = () => (
-  <div className="h-full w-full">
-    <img
-      src="/images/1-panneau.png"
-      alt="Exemple — Panneau"
-      className="h-full w-full object-cover"
-    />
-  </div>
-);
-
-export const SlideExemple1v2 = () => (
-  <div className="h-full w-full">
-    <img
-      src="/images/1-panneau-v2.png"
-      alt="Exemple — Panneau v2"
-      className="h-full w-full object-cover"
-    />
-  </div>
-);
-
-export const SlideExemple2 = () => (
-  <div className="h-full w-full">
-    <img
-      src="/images/2-enseigne.png"
-      alt="Exemple — Enseigne"
-      className="h-full w-full object-cover"
-    />
-  </div>
-);
-
-export const SlideExemple2v2 = () => (
-  <div className="h-full w-full">
-    <img
-      src="/images/2-enseigne-v2.png"
-      alt="Exemple — Enseigne v2"
-      className="h-full w-full object-cover"
-    />
-  </div>
-);
-
-export const SlideExemple3 = () => (
-  <div className="h-full w-full">
-    <img
-      src="/images/3-vitrine.png"
-      alt="Exemple — Vitrine"
-      className="h-full w-full object-cover"
-    />
-  </div>
-);
-
-export const SlideExemple3v2 = () => (
-  <div className="h-full w-full">
-    <img
-      src="/images/3-vitrine-v2.png"
-      alt="Exemple — Vitrine v2"
-      className="h-full w-full object-cover"
-    />
-  </div>
-);
-
-export const SlideExemple4 = () => (
-  <div className="flex h-full items-center justify-center bg-gray-100 p-3">
-    <img
-      src="/images/4-papeterie.png"
-      alt="Exemple — Papeterie"
-      className="max-h-[97%] max-w-[97%] object-contain"
-    />
-  </div>
-);
-
-export const SlideExemple4v2 = () => (
-  <div className="flex h-full items-center justify-center bg-gray-100 p-3">
-    <img
-      src="/images/4-papeterie-v2.png"
-      alt="Exemple — Papeterie v2"
-      className="max-h-[97%] max-w-[97%] object-contain"
-    />
-  </div>
-);
-
-export const SlideExemple5 = () => (
-  <div className="flex h-full items-center justify-center bg-gray-100 p-3">
-    <img
-      src="/images/5-carte-visite.png"
-      alt="Exemple — Carte de visite"
-      className="max-h-[97%] max-w-[97%] object-contain"
-    />
-  </div>
-);
-
-export const SlideExemple5v2 = () => (
-  <div className="flex h-full items-center justify-center bg-gray-100 p-3">
-    <img
-      src="/images/5-carte-visite-v2.png"
-      alt="Exemple — Carte de visite v2"
-      className="max-h-[97%] max-w-[97%] object-contain"
-    />
-  </div>
-);
-
-/* ─── Exemples v3 (opti) ─────────────────────────────────── */
 
 export const SlideExemple1v3 = () => (
   <div className="h-full w-full">
@@ -1738,18 +1524,18 @@ export const SlideRedesign = () => (
 const ETAPES = [
   {
     num: 1,
-    title: 'Validation du logo',
-    text: 'Retours et ajustements finaux sur le logo, le symbole et la typographie pour aboutir à une version définitive.',
-  },
-  {
-    num: 2,
     title: 'Charte graphique',
     text: 'Construction de la charte graphique complète\u00a0: couleurs, typographie, usages, règles de déclinaison sur tous les supports.',
   },
   {
+    num: 2,
+    title: 'Livraison des fichiers',
+    text: 'Envoi des packs logo dans tous les formats nécessaires (SVG, PNG, PDF) pour le print, le web et la signalétique.',
+  },
+  {
     num: 3,
-    title: 'Livraison & finalisation',
-    text: 'Envoi des packs logo dans tous les formats nécessaires et finalisation du projet.',
+    title: 'Déploiement',
+    text: 'Accompagnement pour la mise en place de la nouvelle identité sur les supports physiques et numériques.',
   },
 ];
 

@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════════
-   Home — Réso.NE presentation orchestrator
+   Home — Réso.NE identity presentation orchestrator
    WHAT: Full-screen presentation with sidebar nav, stepper, slides
    WHEN: Landing page at /
    CHANGE: Add slides in SlideContents.tsx, update SECTIONS in sections.ts
@@ -19,9 +19,7 @@ import {
   SlideAujourdhui,
   SlideBenchmark,
   SlideChiffres,
-  SlideCohabitationA,
   SlideCohabitationOpti,
-  SlideConstructionA,
   SlideConstructionOpti,
   SlideCouleursA,
   SlideCouverture,
@@ -29,25 +27,12 @@ import {
   SlideDeclinaisonsCompact,
   SlideDefi,
   SlideDemain,
-  SlideEssais,
-  SlideEssais2,
-  SlideExemple1,
-  SlideExemple1v2,
   SlideExemple1v3,
-  SlideExemple2,
-  SlideExemple2v2,
   SlideExemple2v3,
-  SlideExemple3,
-  SlideExemple3v2,
   SlideExemple3v3,
-  SlideExemple4,
-  SlideExemple4v2,
   SlideExemple4v3,
-  SlideExemple5,
-  SlideExemple5v2,
   SlideExemple5v3,
   SlideExtensibilite,
-  SlideLogoA,
   SlideLogoOpti,
   SlideMerci,
   SlideMission,
@@ -94,38 +79,23 @@ const SLIDE_COMPONENTS: FC[] = [
   SlidePrincipes, // 16
   /* IDENTITÉ VISUELLE — Détails */
   SlidePartiPrisA, // 17
-  SlideLogoA, // 18
-  SlideLogoOpti, // 19
-  SlideConstructionA, // 20
-  SlideConstructionOpti, // 21
-  SlideDeclinaisonsA, // 22
-  SlideDeclinaisonsCompact, // 23
-  SlideCohabitationA, // 24
-  SlideCohabitationOpti, // 25
-  SlideTypoA, // 26
-  SlideCouleursA, // 27
-  SlideEssais, // 28
-  SlideEssais2, // 29
+  SlideLogoOpti, // 18
+  SlideConstructionOpti, // 19
+  SlideDeclinaisonsA, // 20
+  SlideDeclinaisonsCompact, // 21
+  SlideCohabitationOpti, // 22
+  SlideTypoA, // 23
+  SlideCouleursA, // 24
   /* EXEMPLES */
-  SlideExemple1, // 30
-  SlideExemple1v2, // 31
-  SlideExemple1v3, // 32
-  SlideExemple2, // 33
-  SlideExemple2v2, // 34
-  SlideExemple2v3, // 35
-  SlideExemple3, // 36
-  SlideExemple3v2, // 37
-  SlideExemple3v3, // 38
-  SlideExemple4, // 39
-  SlideExemple4v2, // 40
-  SlideExemple4v3, // 41
-  SlideExemple5, // 42
-  SlideExemple5v2, // 43
-  SlideExemple5v3, // 44
-  SlideRedesign, // 45
+  SlideExemple1v3, // 25
+  SlideExemple2v3, // 26
+  SlideExemple3v3, // 27
+  SlideExemple4v3, // 28
+  SlideExemple5v3, // 29
+  SlideRedesign, // 30
   /* PROCHAINES ÉTAPES */
-  SlideUniversVisuel, // 46
-  SlideMerci, // 47
+  SlideUniversVisuel, // 31
+  SlideMerci, // 32
 ];
 
 /* ═══════════════════════════════════════════════════════════════ */
