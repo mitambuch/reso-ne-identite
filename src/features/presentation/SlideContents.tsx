@@ -30,7 +30,11 @@ const P = ({ children, className }: { children: ReactNode; className?: string })
 );
 
 const ResoLogo = ({ h = 'h-7' }: { h?: string }) => (
-  <img src="/images/Variante_3.svg" alt="réso.ne" className={`${h} inline-block align-baseline`} />
+  <img
+    src="/logos/reso-ne-couleur.svg"
+    alt="réso.ne"
+    className={`${h} inline-block align-baseline`}
+  />
 );
 
 /* ─── 0. Couverture ─────────────────────────────────────────── */
@@ -60,7 +64,7 @@ export const SlideCouverture = () => (
     {/* Bottom — identité + méta */}
     <div className="flex items-end justify-between">
       <div className="flex flex-col items-start gap-1">
-        <img src="/images/Variante_3.svg" alt="réso.ne" className="h-10" />
+        <img src="/logos/reso-ne-couleur.svg" alt="réso.ne" className="h-10" />
         <span className="mt-1 text-base text-(--sub)">
           Réseau de soins ambulatoires de proximité — Canton de Neuchâtel
         </span>
@@ -653,7 +657,7 @@ export const SlideDemain = () => (
 
       {/* réso.ne — bloc principal dominant */}
       <div className="border-accent/40 bg-accent/10 w-full max-w-lg rounded-xl border-2 px-12 py-8 text-center">
-        <img src="/images/Variante_3.svg" alt="réso.ne" className="mx-auto h-12" />
+        <img src="/logos/reso-ne-couleur.svg" alt="réso.ne" className="mx-auto h-12" />
         <p className="mt-2 text-lg text-(--sub)">Marque réseau</p>
       </div>
 
@@ -1132,90 +1136,6 @@ export const SlideConstructionOpti = () => (
         point plein sur le tiers gauche, l&apos;intersection des lignes sur le tiers droit, et le
         point du réseau &mdash; celui du .ne &mdash; centré dans le troisième tiers du carré.
       </p>
-    </div>
-  </div>
-);
-
-/* ─── Variante 1 — Déclinaisons ──────────────────────────── */
-
-export const SlideDeclinaisonsA = () => (
-  <div className="grid h-full grid-cols-2 grid-rows-2">
-    {/* Haut gauche — Variante 3 sur blanc */}
-    <div className="flex items-center justify-center bg-white">
-      <img
-        src="/images/Variante_3.svg"
-        alt="Logo variante couleur"
-        className="max-h-[60%] max-w-[60%] object-contain"
-      />
-    </div>
-
-    {/* Haut droite — Blanc sur anthracite */}
-    <div className="flex items-center justify-center" style={{ backgroundColor: '#2D2D2D' }}>
-      <img
-        src="/images/Variante_white.svg"
-        alt="Logo blanc sur fond sombre"
-        className="max-h-[60%] max-w-[60%] object-contain"
-      />
-    </div>
-
-    {/* Bas gauche — Blanc sur teal Réso.ne */}
-    <div className="flex items-center justify-center" style={{ backgroundColor: '#59BFBD' }}>
-      <img
-        src="/images/Variante_white.svg"
-        alt="Logo blanc sur fond teal"
-        className="max-h-[60%] max-w-[60%] object-contain"
-      />
-    </div>
-
-    {/* Bas droite — Noir sur blanc teal */}
-    <div className="flex items-center justify-center" style={{ backgroundColor: '#F5FAFA' }}>
-      <img
-        src="/images/Variante_black.svg"
-        alt="Logo noir sur fond clair"
-        className="max-h-[60%] max-w-[60%] object-contain"
-      />
-    </div>
-  </div>
-);
-
-/* ─── Déclinaisons compact ───────────────────────────────── */
-
-export const SlideDeclinaisonsCompact = () => (
-  <div className="grid h-full grid-cols-2 grid-rows-2">
-    {/* Haut gauche — Compact couleur sur blanc */}
-    <div className="flex items-center justify-center bg-white">
-      <img
-        src="/images/Variante_compact.svg"
-        alt="Logo compact couleur"
-        className="max-h-[60%] max-w-[60%] object-contain"
-      />
-    </div>
-
-    {/* Haut droite — Compact blanc sur anthracite */}
-    <div className="flex items-center justify-center" style={{ backgroundColor: '#2D2D2D' }}>
-      <img
-        src="/images/Variante_compact_white.svg"
-        alt="Logo compact blanc sur fond sombre"
-        className="max-h-[60%] max-w-[60%] object-contain"
-      />
-    </div>
-
-    {/* Bas gauche — Compact blanc sur teal Réso.ne */}
-    <div className="flex items-center justify-center" style={{ backgroundColor: '#59BFBD' }}>
-      <img
-        src="/images/Variante_compact_white.svg"
-        alt="Logo compact blanc sur fond teal"
-        className="max-h-[60%] max-w-[60%] object-contain"
-      />
-    </div>
-
-    {/* Bas droite — Compact noir sur blanc teal */}
-    <div className="flex items-center justify-center" style={{ backgroundColor: '#F5FAFA' }}>
-      <img
-        src="/images/Variante_compact_black.svg"
-        alt="Logo compact noir sur fond clair"
-        className="max-h-[60%] max-w-[60%] object-contain"
-      />
     </div>
   </div>
 );

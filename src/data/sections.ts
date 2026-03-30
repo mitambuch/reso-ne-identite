@@ -49,23 +49,21 @@ export const SECTIONS: Section[] = [
   { title: 'Logo vertical', layout: 'default' }, // 20
   { title: 'Symbole', layout: 'default' }, // 21
   { title: 'Construction', layout: 'default' }, // 22
-  { title: 'Déclinaisons', layout: 'default' }, // 23
-  { title: 'Déclinaisons compact', layout: 'default' }, // 24
-  { title: 'Cohabitation RHNe', layout: 'default' }, // 25
-  { title: 'La typographie', layout: 'default' }, // 26
-  { title: 'Les couleurs', layout: 'default' }, // 27
+  { title: 'Cohabitation RHNe', layout: 'default' }, // 23
+  { title: 'La typographie', layout: 'default' }, // 24
+  { title: 'Les couleurs', layout: 'default' }, // 25
 
   /* ── EXEMPLES ─────────────────────────────────────────────── */
-  { title: 'Panneau', layout: 'default' }, // 28
-  { title: 'Enseigne', layout: 'default' }, // 29
-  { title: 'Vitrine', layout: 'default' }, // 30
-  { title: 'Papeterie', layout: 'default' }, // 31
-  { title: 'Carte de visite', layout: 'default' }, // 32
-  { title: 'Redesign site', layout: 'default' }, // 33
+  { title: 'Panneau', layout: 'default' }, // 26
+  { title: 'Enseigne', layout: 'default' }, // 27
+  { title: 'Vitrine', layout: 'default' }, // 28
+  { title: 'Papeterie', layout: 'default' }, // 29
+  { title: 'Carte de visite', layout: 'default' }, // 30
+  { title: 'Redesign site', layout: 'default' }, // 31
 
   /* ── PROCHAINES ÉTAPES ──────────────────────────────────── */
-  { title: 'La suite', layout: 'default' }, // 34
-  { title: 'Merci', layout: 'default' }, // 35
+  { title: 'La suite', layout: 'default' }, // 32
+  { title: 'Merci', layout: 'default' }, // 33
 ];
 
 export const TOTAL_SLIDES = SECTIONS.length;
@@ -76,7 +74,7 @@ export const NAV_GROUPS: NavGroup[] = [
   { label: 'Analyse', items: [5, 6, 7, 8] },
   { label: 'Naming & Architecture', items: [9, 10, 11, 12, 13] },
   { label: 'Stratégie visuelle', items: [14, 15, 16] },
-  { label: 'Identité visuelle', items: [17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27] },
-  { label: 'Exemples', items: [28, 29, 30, 31, 32, 33] },
-  { label: 'Prochaines étapes', items: [34, 35] },
+  { label: 'Identité visuelle', items: [17, 18, 19, 20, 21, 22, 23, 24, 25] },
+  { label: 'Exemples', items: [26, 27, 28, 29, 30, 31] },
+  { label: 'Prochaines étapes', items: [32, 33] },
 ];

@@ -75,7 +75,7 @@ export function LockScreen({ onUnlock }: LockScreenProps) {
     >
       {/* Title */}
       <div className="flex flex-col items-center gap-2">
-        <img src="/images/Variante_3.svg" alt="réso.ne" className="h-10" />
+        <img src="/logos/reso-ne-couleur.svg" alt="réso.ne" className="h-10" />
         <span className="text-muted text-sm">Entrez le code d&apos;accès</span>
       </div>
 

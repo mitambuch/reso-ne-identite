@@ -23,8 +23,6 @@ import {
   SlideConstructionOpti,
   SlideCouleursA,
   SlideCouverture,
-  SlideDeclinaisonsA,
-  SlideDeclinaisonsCompact,
   SlideDefi,
   SlideDemain,
   SlideExemple1v3,
@@ -87,21 +85,19 @@ const SLIDE_COMPONENTS: FC[] = [
   SlideLogoVertical, // 20
   SlideLogoSymbole, // 21
   SlideConstructionOpti, // 22
-  SlideDeclinaisonsA, // 23
-  SlideDeclinaisonsCompact, // 24
-  SlideCohabitationOpti, // 25
-  SlideTypoA, // 26
-  SlideCouleursA, // 27
+  SlideCohabitationOpti, // 23
+  SlideTypoA, // 24
+  SlideCouleursA, // 25
   /* EXEMPLES */
-  SlideExemple1v3, // 28
-  SlideExemple2v3, // 29
-  SlideExemple3v3, // 30
-  SlideExemple4v3, // 31
-  SlideExemple5v3, // 32
-  SlideRedesign, // 33
+  SlideExemple1v3, // 26
+  SlideExemple2v3, // 27
+  SlideExemple3v3, // 28
+  SlideExemple4v3, // 29
+  SlideExemple5v3, // 30
+  SlideRedesign, // 31
   /* PROCHAINES ÉTAPES */
-  SlideUniversVisuel, // 34
-  SlideMerci, // 35
+  SlideUniversVisuel, // 32
+  SlideMerci, // 33
 ];
 
 /* ═══════════════════════════════════════════════════════════════ */
