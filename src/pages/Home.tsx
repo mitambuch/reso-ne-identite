@@ -33,7 +33,10 @@ import {
   SlideExemple4v3,
   SlideExemple5v3,
   SlideExtensibilite,
-  SlideLogoOpti,
+  SlideLogoCouleur,
+  SlideLogoHorizontal,
+  SlideLogoSymbole,
+  SlideLogoVertical,
   SlideMerci,
   SlideMission,
   SlideNomenclature,
@@ -79,23 +82,26 @@ const SLIDE_COMPONENTS: FC[] = [
   SlidePrincipes, // 16
   /* IDENTITÉ VISUELLE — Détails */
   SlidePartiPrisA, // 17
-  SlideLogoOpti, // 18
-  SlideConstructionOpti, // 19
-  SlideDeclinaisonsA, // 20
-  SlideDeclinaisonsCompact, // 21
-  SlideCohabitationOpti, // 22
-  SlideTypoA, // 23
-  SlideCouleursA, // 24
+  SlideLogoCouleur, // 18
+  SlideLogoHorizontal, // 19
+  SlideLogoVertical, // 20
+  SlideLogoSymbole, // 21
+  SlideConstructionOpti, // 22
+  SlideDeclinaisonsA, // 23
+  SlideDeclinaisonsCompact, // 24
+  SlideCohabitationOpti, // 25
+  SlideTypoA, // 26
+  SlideCouleursA, // 27
   /* EXEMPLES */
-  SlideExemple1v3, // 25
-  SlideExemple2v3, // 26
-  SlideExemple3v3, // 27
-  SlideExemple4v3, // 28
-  SlideExemple5v3, // 29
-  SlideRedesign, // 30
+  SlideExemple1v3, // 28
+  SlideExemple2v3, // 29
+  SlideExemple3v3, // 30
+  SlideExemple4v3, // 31
+  SlideExemple5v3, // 32
+  SlideRedesign, // 33
   /* PROCHAINES ÉTAPES */
-  SlideUniversVisuel, // 31
-  SlideMerci, // 32
+  SlideUniversVisuel, // 34
+  SlideMerci, // 35
 ];
 
 /* ═══════════════════════════════════════════════════════════════ */

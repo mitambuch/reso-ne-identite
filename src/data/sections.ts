@@ -45,24 +45,27 @@ export const SECTIONS: Section[] = [
   /* ── IDENTITÉ VISUELLE — Détails ────────────────────────── */
   { title: 'Le parti pris', layout: 'default' }, // 17
   { title: 'Le logo', layout: 'default' }, // 18
-  { title: 'Construction', layout: 'default' }, // 19
-  { title: 'Déclinaisons', layout: 'default' }, // 20
-  { title: 'Déclinaisons compact', layout: 'default' }, // 21
-  { title: 'Cohabitation RHNe', layout: 'default' }, // 22
-  { title: 'La typographie', layout: 'default' }, // 23
-  { title: 'Les couleurs', layout: 'default' }, // 24
+  { title: 'Logo horizontal', layout: 'default' }, // 19
+  { title: 'Logo vertical', layout: 'default' }, // 20
+  { title: 'Symbole', layout: 'default' }, // 21
+  { title: 'Construction', layout: 'default' }, // 22
+  { title: 'Déclinaisons', layout: 'default' }, // 23
+  { title: 'Déclinaisons compact', layout: 'default' }, // 24
+  { title: 'Cohabitation RHNe', layout: 'default' }, // 25
+  { title: 'La typographie', layout: 'default' }, // 26
+  { title: 'Les couleurs', layout: 'default' }, // 27
 
   /* ── EXEMPLES ─────────────────────────────────────────────── */
-  { title: 'Panneau', layout: 'default' }, // 25
-  { title: 'Enseigne', layout: 'default' }, // 26
-  { title: 'Vitrine', layout: 'default' }, // 27
-  { title: 'Papeterie', layout: 'default' }, // 28
-  { title: 'Carte de visite', layout: 'default' }, // 29
-  { title: 'Redesign site', layout: 'default' }, // 30
+  { title: 'Panneau', layout: 'default' }, // 28
+  { title: 'Enseigne', layout: 'default' }, // 29
+  { title: 'Vitrine', layout: 'default' }, // 30
+  { title: 'Papeterie', layout: 'default' }, // 31
+  { title: 'Carte de visite', layout: 'default' }, // 32
+  { title: 'Redesign site', layout: 'default' }, // 33
 
   /* ── PROCHAINES ÉTAPES ──────────────────────────────────── */
-  { title: 'La suite', layout: 'default' }, // 31
-  { title: 'Merci', layout: 'default' }, // 32
+  { title: 'La suite', layout: 'default' }, // 34
+  { title: 'Merci', layout: 'default' }, // 35
 ];
 
 export const TOTAL_SLIDES = SECTIONS.length;
@@ -73,7 +76,7 @@ export const NAV_GROUPS: NavGroup[] = [
   { label: 'Analyse', items: [5, 6, 7, 8] },
   { label: 'Naming & Architecture', items: [9, 10, 11, 12, 13] },
   { label: 'Stratégie visuelle', items: [14, 15, 16] },
-  { label: 'Identité visuelle', items: [17, 18, 19, 20, 21, 22, 23, 24] },
-  { label: 'Exemples', items: [25, 26, 27, 28, 29, 30] },
-  { label: 'Prochaines étapes', items: [31, 32] },
+  { label: 'Identité visuelle', items: [17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27] },
+  { label: 'Exemples', items: [28, 29, 30, 31, 32, 33] },
+  { label: 'Prochaines étapes', items: [34, 35] },
 ];

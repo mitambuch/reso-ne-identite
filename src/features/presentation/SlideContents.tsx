@@ -1015,15 +1015,99 @@ export const SlidePartiPrisA = () => (
   </div>
 );
 
-/* ─── Le logo ────────────────────────────────────────────── */
+/* ─── Le logo — principal couleur (hero) ─────────────────── */
 
-export const SlideLogoOpti = () => (
+export const SlideLogoCouleur = () => (
   <div className="flex h-full items-center justify-center p-10">
     <img
-      src="/images/variante_couleur-opti.svg"
-      alt="réso.ne — Logo optimisé"
+      src="/logos/reso-ne-couleur.svg"
+      alt="réso.ne — Logo principal couleur"
       className="max-h-[45vh] max-w-[45vw] object-contain"
     />
+  </div>
+);
+
+/* ─── Le logo — déclinaisons horizontales ────────────────── */
+
+export const SlideLogoHorizontal = () => (
+  <div className="grid h-full grid-rows-3">
+    <div className="flex items-center justify-center bg-white">
+      <img
+        src="/logos/reso-ne-couleur.svg"
+        alt="Logo horizontal couleur"
+        className="max-h-[60%] max-w-[50%] object-contain"
+      />
+    </div>
+    <div className="flex items-center justify-center" style={{ backgroundColor: '#2D2D2D' }}>
+      <img
+        src="/logos/reso-ne-blanc.svg"
+        alt="Logo horizontal blanc"
+        className="max-h-[60%] max-w-[50%] object-contain"
+      />
+    </div>
+    <div className="flex items-center justify-center" style={{ backgroundColor: '#F5FAFA' }}>
+      <img
+        src="/logos/reso-ne-noir.svg"
+        alt="Logo horizontal noir"
+        className="max-h-[60%] max-w-[50%] object-contain"
+      />
+    </div>
+  </div>
+);
+
+/* ─── Le logo — déclinaisons verticales ──────────────────── */
+
+export const SlideLogoVertical = () => (
+  <div className="grid h-full grid-cols-3">
+    <div className="flex items-center justify-center bg-white">
+      <img
+        src="/logos/reso-ne-vertical-couleur.svg"
+        alt="Logo vertical couleur"
+        className="max-h-[60%] max-w-[60%] object-contain"
+      />
+    </div>
+    <div className="flex items-center justify-center" style={{ backgroundColor: '#2D2D2D' }}>
+      <img
+        src="/logos/reso-ne-vertical-blanc.svg"
+        alt="Logo vertical blanc"
+        className="max-h-[60%] max-w-[60%] object-contain"
+      />
+    </div>
+    <div className="flex items-center justify-center" style={{ backgroundColor: '#F5FAFA' }}>
+      <img
+        src="/logos/reso-ne-vertical-noir.svg"
+        alt="Logo vertical noir"
+        className="max-h-[60%] max-w-[60%] object-contain"
+      />
+    </div>
+  </div>
+);
+
+/* ─── Le symbole — déclinaisons ──────────────────────────── */
+
+export const SlideLogoSymbole = () => (
+  <div className="grid h-full grid-cols-3">
+    <div className="flex items-center justify-center bg-white">
+      <img
+        src="/logos/reso-ne-symbole-couleur.svg"
+        alt="Symbole couleur"
+        className="max-h-[40%] max-w-[40%] object-contain"
+      />
+    </div>
+    <div className="flex items-center justify-center" style={{ backgroundColor: '#2D2D2D' }}>
+      <img
+        src="/logos/reso-ne-symbole-blanc.svg"
+        alt="Symbole blanc"
+        className="max-h-[40%] max-w-[40%] object-contain"
+      />
+    </div>
+    <div className="flex items-center justify-center" style={{ backgroundColor: '#F5FAFA' }}>
+      <img
+        src="/logos/reso-ne-symbole-noir.svg"
+        alt="Symbole noir"
+        className="max-h-[40%] max-w-[40%] object-contain"
+      />
+    </div>
   </div>
 );
 
